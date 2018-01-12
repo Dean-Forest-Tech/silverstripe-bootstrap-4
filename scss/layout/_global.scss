@@ -1,0 +1,57 @@
+/***************************************
+    CORE STYLES
+****************************************/
+:root {
+    font-size: 14px;
+}
+html,
+body {
+    background: $gray-200;
+}
+
+/***************************************
+    HEADER STYLES
+****************************************/
+header {
+    background: $header-background;
+    padding-top: $grid-gutter-width/2;
+    color: $header-colour;
+    a {
+        color: $white;        
+    }
+}
+
+/***************************************
+    BODY STYLES
+****************************************/
+.main {
+    padding-top: 100px;
+    .container {
+        background: $white;
+        padding-top: $grid-gutter-width;
+        padding-bottom: $grid-gutter-width/2;
+    }
+}
+
+/***************************************
+    FOOTER STYLES
+****************************************/
+footer {
+    background: $footer-background;
+    padding-bottom: $grid-gutter-width/2;
+    color: $footer-colour;
+    a {  
+        color: $white;
+    }
+}
+
+/***************************************
+    MISC STYLES
+****************************************/
+.embed-responsive {
+    margin-bottom: $grid-gutter-width/2;
+    &.embed-responsive-map {
+        padding-bottom: $grid-gutter-width*10;
+    }
+}
+ 

@@ -1,0 +1,17 @@
+{
+    "name": "ilateral/silverstripe-bootstrap-theme-base",
+    "description": "A simple theme built on bootstrap 4",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mark Anderson (ilateral)",
+            "homepage": "http://www.ilateral.co.uk"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=4.0"
+    }
+}
