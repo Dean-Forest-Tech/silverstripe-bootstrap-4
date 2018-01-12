@@ -1,0 +1,17 @@
+.navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+  
+      &#{$infix} {
+        @include media-breakpoint-up($next) { 
+          .navbar-nav {  
+            .nav-link {
+              padding-right: 1rem;
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
