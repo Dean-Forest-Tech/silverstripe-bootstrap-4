@@ -4,7 +4,7 @@
             <div class="col-sm">
                 <ul class="nav">
                     <% loop $Menu(1) %>
-                        <li class="$LinkingMode nav-item<% if $Current || $Section %> active<% end_if %>"><a class="nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+                        <li class="$LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>"><a class="nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
                     <% end_loop %>
                 </ul>
             </div>

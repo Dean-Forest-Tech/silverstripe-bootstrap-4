@@ -1,6 +1,6 @@
 <header class="fixed-top" role="banner">
 	<div class="container">
-		<div class="row">
+		<div class="row  align-items-stretch">
 			<div class="col-sm col-sm-auto">
 				<a href="$BaseHref" class="brand" rel="home">
 					<h1>$SiteConfig.Title</h1>
@@ -30,8 +30,9 @@
 						$SearchForm
 					</div>
 				<% end_if %>
-				<% include Navigation %>
+				<div class="row align-items-end"><% include Navigation %></div>
 			</div>
 		</div>
 	</div>
+	<div class="bottom-bar"></div>
 </header>

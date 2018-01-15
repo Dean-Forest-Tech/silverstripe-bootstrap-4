@@ -1,13 +1,5 @@
 <div class="row">
 	<div class="col-sm content" role="main">
-		<% if $MapEmbed %>
-			<div class="embed-responsive embed-responsive-map">
-				$MapEmbed.RAW
-			</div>
-		<% else_if $FeaturedImage %>
-			<p><img class="img-fluid" src="$FeaturedImage.Fill(1200,400).URL" alt="$featuredImage.Title"></p>
-		<% end_if %>
-		<h1>$Title</h1>
 		<div class="row">
 			<div class="col-md">
 				$Content
@@ -40,7 +32,7 @@
 		$PageComments
 	</div>
 	<% if $Menu(2) || $SideBarView.Widgets %>
-		<aside class="col-sm col-sm-auto" role="complementary">
+		<aside class="col-sm col-sm-3" role="complementary">
 			<% include SideBar %>
 		</aside>
 	<% end_if %>

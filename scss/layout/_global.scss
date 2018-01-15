@@ -6,7 +6,24 @@
 }
 html,
 body {
-    background: $gray-200;
+    background: $footer-background;
+    .container {
+        padding: 0 $grid-gutter-width;
+    }
+}
+.secondary {
+    .nav-pills {
+        .nav {
+            padding: $grid-gutter-width/4;
+            .active {
+                background: transparent;
+                color: $sub-nav-active-colour;
+            }
+        }
+        .active {
+            border-radius: 0;
+        }
+    }
 }
 
 /***************************************
@@ -14,10 +31,30 @@ body {
 ****************************************/
 header {
     background: $header-background;
-    padding-top: $grid-gutter-width/2;
+    padding-top: $grid-gutter-width/4;
+    padding-bottom: $grid-gutter-width/4;
     color: $header-colour;
+    border-top: 7px solid $header-top-border-colour;
     a {
-        color: $white;        
+        color: $white;      
+    }
+    .navbar {
+        padding-bottom: 0;
+        position: relative;
+        top: $grid-gutter-width/4 + 1; 
+        z-index: 9999;       
+        li {
+            &.active {
+                border-bottom: 5px solid $header-top-border-colour;
+            }  
+        }
+    }
+    .bottom-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 7px solid $header-bottom-border-colour;
     }
 }
 
@@ -25,11 +62,17 @@ header {
     BODY STYLES
 ****************************************/
 .main {
-    padding-top: 100px;
+    padding-top: 105px;
+    background: $main-bg;
+    &:not(.no-pad-top) .container {
+        padding-top: $grid-gutter-width;
+    }
     .container {
         background: $white;
-        padding-top: $grid-gutter-width;
         padding-bottom: $grid-gutter-width/2;
+    }
+    .banner-image {
+        margin-bottom: $grid-gutter-width;
     }
 }
 
@@ -38,20 +81,35 @@ header {
 ****************************************/
 footer {
     background: $footer-background;
+    padding-top: $grid-gutter-width/2;
     padding-bottom: $grid-gutter-width/2;
     color: $footer-colour;
     a {  
-        color: $white;
+        color: $footer-colour;
+        &.active {
+            color: rgba($footer-colour, 0.5);
+        }
+    }
+    .row {
+        margin-bottom: $grid-gutter-width/2;
     }
 }
 
 /***************************************
     MISC STYLES
 ****************************************/
+.map-row {
+    width: calc(100% + #{$grid-gutter-width});
+    min-width: 100%;
+    display: block;
+}
 .embed-responsive {
-    margin-bottom: $grid-gutter-width/2;
+    margin-bottom: $grid-gutter-width;
     &.embed-responsive-map {
         padding-bottom: $grid-gutter-width*10;
     }
+}
+#WidgetHolder,nav.secondary {
+    margin-bottom: $grid-gutter-width;
 }
  

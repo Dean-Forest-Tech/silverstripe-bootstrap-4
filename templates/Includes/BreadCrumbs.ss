@@ -1,5 +1,5 @@
 <% if $Level(2) %>
-	<div id="Breadcrumbs">
+	<div class="col text-right" id="Breadcrumbs">
 	   	$Breadcrumbs
 	</div>
 <% end_if %>
