@@ -180,8 +180,8 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $black;
+$secondary:     $gray-400;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -255,6 +255,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
+$main-bg:                   $gray-200 !default;
 $body-color:                $gray-900 !default;
 
 // Links
@@ -321,13 +322,14 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-200 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
 
-$component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
-
+$component-active-color:      $gray-800 !default;
+$sub-nav-active-colour:        $gray-600 !default;
+$component-active-bg:         $main-bg !default;
+ 
 $caret-width:                 .3em !default;
 
 $transition-base:             all .2s ease-in-out !default;
@@ -409,10 +411,12 @@ $hr-margin-y:                 $spacer !default;
 // Header
 $header-background: $primary;
 $header-colour: $white;
+$header-top-border-colour: lighten($secondary, 10%);
+$header-bottom-border-colour: $secondary;
 
 // Footer
 $footer-background: $secondary;
-$footer-colour: $white;
+$footer-colour: $gray-800;
 
 // Navbar
 
@@ -427,3 +431,6 @@ $navbar-light-active-color:         rgba($header-colour, .5);
 $navbar-light-disabled-color:       rgba($header-colour, .3);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($header-colour, .1);
+
+$breadcrumb-bg:                     transparent;
+$card-cap-bg:                       $secondary !default;

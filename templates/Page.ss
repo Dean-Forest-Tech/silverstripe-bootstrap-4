@@ -49,8 +49,9 @@
 	</head>
 	<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 	<% include Header %>
-	<div class="main" role="main">
+	<div class="main<% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %>" role="main">
 		<div class="container typography line">
+			<% include Banner %>
 			$Layout
 		</div>
 	</div>
