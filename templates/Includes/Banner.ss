@@ -5,28 +5,30 @@
                     $MapEmbed.RAW
                 </div>
             </div>
-        <% else_if $FeaturedImage %>
+        <% else_if $FeaturedImage.exists() %>
             <div class="row">
                 <p class="banner-image"><img class="img-fluid" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title"></p>
             </div>	
         <% end_if %>
-        <div class="col"><h1>
-            <% if $ArchiveYear %>
-                <%t SilverStripe\\Blog\\Model\\Blog.Archive 'Archive' %>:
-                <% if $ArchiveDay %>
-                    $ArchiveDate.Nice
-                <% else_if $ArchiveMonth %>
-                    $ArchiveDate.format('F, Y')
+        <div class="col">
+            <h1<% if $ClassName == 'HomePage' %> class="text-center"<% end_if %>>
+                <% if $ArchiveYear %>
+                    <%t SilverStripe\\Blog\\Model\\Blog.Archive 'Archive' %>:
+                    <% if $ArchiveDay %>
+                        $ArchiveDate.Nice
+                    <% else_if $ArchiveMonth %>
+                        $ArchiveDate.format('F, Y')
+                    <% else %>
+                        $ArchiveDate.format('Y')
+                    <% end_if %>
+                <% else_if $CurrentTag %>
+                    <%t SilverStripe\\Blog\\Model\\Blog.Tag 'Tag' %>: $CurrentTag.Title
+                <% else_if $CurrentCategory %>
+                    <%t SilverStripe\\Blog\\Model\\Blog.Category 'Category' %>: $CurrentCategory.Title
                 <% else %>
-                    $ArchiveDate.format('Y')
+                    $Title
                 <% end_if %>
-            <% else_if $CurrentTag %>
-                <%t SilverStripe\\Blog\\Model\\Blog.Tag 'Tag' %>: $CurrentTag.Title
-            <% else_if $CurrentCategory %>
-                <%t SilverStripe\\Blog\\Model\\Blog.Category 'Category' %>: $CurrentCategory.Title
-            <% else %>
-                $Title
-            <% end_if %>
-        </h1></div>
+            </h1>
+        </div>
         <% include BreadCrumbs %>
     </div>

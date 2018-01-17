@@ -6,18 +6,11 @@
 	<% end_if %>
 	<div class="col-sm content" role="main">
 		<div class="row justify-content-md-center">
-			<div class="col-md-10 col-lg-8">
+			<div class="col-md-8 col-lg-6">
 				$Content
+				$Form
 			</div>
 		</div>
-		$Form
 		$PageComments
 	</div>
 </div>
-<% if $RenderedSections %>
-	<% loop $RenderedSections %>
-		<div class="section" id="$URLSegment">
-			$Layout.RAW
-		</div>
-	<% end_loop %>
-<% end_if %>

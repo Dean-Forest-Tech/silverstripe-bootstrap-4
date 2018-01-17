@@ -157,7 +157,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -236,14 +236,14 @@ sup {
 }
 
 a {
-  color: #000;
+  color: #495560;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: black;
+  color: #282e35;
   text-decoration: underline;
 }
 
@@ -447,7 +447,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
@@ -2690,12 +2690,12 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #000;
+  color: #495560;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: black;
+  color: #282e35;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -4185,13 +4185,13 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #000;
+  color: #495560;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
 .page-link:focus, .page-link:hover {
-  color: black;
+  color: #282e35;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -11210,6 +11210,12 @@ a.text-dark:focus, a.text-dark:hover {
   padding-left: 1rem;
 }
 
+.main h1, .main h2,
+.main .h1, .main .h2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
 /***************************************
     CORE STYLES
 ****************************************/
@@ -11257,8 +11263,9 @@ header a {
 
 header .navbar {
   padding-bottom: 0;
-  position: relative;
-  top: 8.5px;
+  position: absolute;
+  bottom: -6px;
+  right: 0;
   z-index: 9999;
 }
 
@@ -11337,4 +11344,12 @@ footer .row {
 
 #WidgetHolder, nav.secondary {
   margin-bottom: 30px;
+}
+
+/***************************************
+    PAGE STYLES
+****************************************/
+/** HomePage **/
+.HomePage .section {
+  margin: 30px 0;
 }

@@ -47,7 +47,8 @@
 		<% require themedCSS('layout') %>
 		<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	</head>
-	<body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+	<body class="$ClassName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
+	$SilverstripeNavigator.RAW
 	<% include Header %>
 	<div class="main<% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %>" role="main">
 		<div class="container typography line">

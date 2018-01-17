@@ -2,12 +2,22 @@
 	<div class="container">
 		<div class="row  align-items-stretch">
 			<div class="col-sm col-sm-auto">
-				<a href="$BaseHref" class="brand" rel="home">
-					<h1>$SiteConfig.Title</h1>
-					<% if $SiteConfig.Tagline %>
-					<p>$SiteConfig.Tagline</p>
-					<% end_if %>
-				</a>
+				<h1>				
+					<a href="$BaseHref" class="brand" rel="home">
+						<% if $SiteConfig.Logo %>
+							<img class="img-fluid" src="$SiteConfig.Logo.ScaleHeight(50).URL" alt="$SiteConfig.Title">
+						<% else %>
+							$SiteConfig.Title
+						<% end_if %>
+					</a>
+				</h1>
+				<% if $SiteConfig.Tagline %>
+					<p>
+						<a href="$BaseHref" class="brand" rel="home">
+								$SiteConfig.Tagline
+						</a>
+					</p>
+				<% end_if %>
 			</div>
 			<div class="col-sm">
 				<% with $SiteConfig.ContactPage %>
