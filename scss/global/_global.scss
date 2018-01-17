@@ -41,17 +41,27 @@ header {
     a {
         color: $white;      
     }
-    .navbar {
-        padding-bottom: 0;
-        position: absolute;
-        bottom: -6px;
-        right: 0;
-        z-index: 9999;       
-        li {
-            &.active {
-                border-bottom: 5px solid $header-top-border-colour;
-            }  
+    @media screen and (max-width: grid-breakpoint("sm")) {
+        .navbar {
+            padding-bottom: 0;
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            z-index: 9999;       
+            li {
+                &.active {
+                    border-bottom: 5px solid $header-top-border-colour;
+                }  
+            }
         }
+    }
+    .navbar-toggler {
+        position: absolute;
+        left: $grid-gutter-width/2;
+        top: 0;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
     }
     .bottom-bar {
         position: absolute;
