@@ -12,7 +12,7 @@
 					</a>
 				</h1>
 				<% if $SiteConfig.Tagline %>
-					<p>
+					<p class="d-none d-sm-block">
 						<a href="$BaseHref" class="brand" rel="home">
 								$SiteConfig.Tagline
 						</a>
