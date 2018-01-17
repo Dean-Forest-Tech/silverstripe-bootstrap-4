@@ -14,6 +14,9 @@
             "homepage": "http://www.ilateral.co.uk"
         }
     ],
+	"extra": {
+		"installer-name": "bootstrap"
+	},
     "require": {
         "composer/installers": "*",
         "silverstripe/framework": ">=4.0"
