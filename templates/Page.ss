@@ -32,23 +32,28 @@
 			<meta property="og:image" content="{$BaseHref}{$SiteConfig.Logo.SetWidth(550).FileName}" />
 		<% end_if %>
 
-		<link rel="icon" sizes="16x16" href="{$ThemeDir}/icons/icon-16.png" />
-		<link rel="icon" sizes="32x32" href="{$ThemeDir}/icons/icon-32.png" />
-		<link rel="icon" sizes="48x48" href="{$ThemeDir}/icons/icon-48.png" />
-		<link rel="icon" sizes="64x64" href="{$ThemeDir}/icons/icon-64.png" />
-		<link rel="icon" sizes="128x128" href="{$ThemeDir}/icons/icon-128.png" />
-		<link rel="icon" sizes="196x196" href="{$ThemeDir}/icons/icon-196.png" />
+		<link rel="icon" sizes="16x16" href="themes/bootstrap/icons/icon-16.png" />
+		<link rel="icon" sizes="32x32" href="themes/bootstrap/icons/icon-32.png" />
+		<link rel="icon" sizes="48x48" href="themes/bootstrap/icons/icon-48.png" />
+		<link rel="icon" sizes="64x64" href="themes/bootstrap/icons/icon-64.png" />
+		<link rel="icon" sizes="128x128" href="themes/bootstrap/icons/icon-128.png" />
+		<link rel="icon" sizes="196x196" href="themes/bootstrap/icons/icon-196.png" />
 
-		<link rel="apple-touch-icon" href="{$ThemeDir}/icons/icon-60.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="{$ThemeDir}/icons/icon-76.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="{$ThemeDir}/icons/icon-120.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="{$ThemeDir}/icons/icon-152.png">
+		<link rel="apple-touch-icon" href="themes/bootstrap/icons/icon-60.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="themes/bootstrap/icons/icon-76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="themes/bootstrap/icons/icon-120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="themes/bootstrap/icons/icon-152.png">
 
 		<% require themedCSS('layout') %>
-		<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+
+		<% require javascript("themes/bootstrap/bower_components/jquery/dist/jquery.js") %>
+		<% require javascript("themes/bootstrap/bower_components/popper.js/dist/umd/popper.js") %>
+		<% require javascript("themes/bootstrap/bower_components/tether/dist/js/tether.js") %>
+		<% require javascript("themes/bootstrap/bower_components/bootstrap/dist/js/bootstrap.js") %>
+
+		<link rel="shortcut icon" href="themes/bootstrap/images/favicon.ico" />
 	</head>
 	<body class="$ClassName" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-	$SilverstripeNavigator.RAW
 	<% include Header %>
 	<div class="main<% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
 		<div class="container typography line">
@@ -57,10 +62,5 @@
 		</div>
 	</div>
 	<% include Footer %>
-
-	<script type="text/javascript" src="{$ThemeDir}/bower_components/jquery/dist/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="{$ThemeDir}/bower_components/tether/dist/js/tether.js"></script>
-	<script type="text/javascript" src="{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	</body>
 </html>

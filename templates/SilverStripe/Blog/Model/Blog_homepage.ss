@@ -1,4 +1,4 @@
-<h2 class="text-center">$MenuTitle</h2>
+<h2 class="text-center"><span>$MenuTitle</span></h2>
 <% if $BlogPosts.Exists %>
     <div class="row">
         <% loop $BlogPosts.Limit(4) %>

@@ -12,6 +12,7 @@
         <% end_if %>
         <div class="col">
             <h1<% if $ClassName == 'HomePage' %> class="text-center"<% end_if %>>
+                <% if $ClassName == 'HomePage' %><span><% end_if %>
                 <% if $ArchiveYear %>
                     <%t SilverStripe\\Blog\\Model\\Blog.Archive 'Archive' %>:
                     <% if $ArchiveDay %>
@@ -28,7 +29,11 @@
                 <% else %>
                     $Title
                 <% end_if %>
+                <% if $ClassName == 'HomePage' %></span><% end_if %>
             </h1>
         </div>
         <% include BreadCrumbs %>
     </div>
+<% if $ClassName != 'HomePage' %>
+    <hr />
+<% end_if %>

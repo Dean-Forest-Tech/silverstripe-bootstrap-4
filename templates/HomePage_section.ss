@@ -1,4 +1,4 @@
-<h2 class="text-center">$MenuTitle</h2>
+<h2 class="text-center"><span>$MenuTitle</span></h2>
 <div class="row">
     <% if $FeaturedImage %>
         <div class="col-sm" role="main">
@@ -6,8 +6,9 @@
         </div>
     <% end_if %>
 	<div class="col-sm content" role="main">
-		$Content
+		<p>$Content.Summary</p>
 		$Form
-		$PageComments
+        $PageComments
+        <p><a class="btn btn-link" href="$Link">$MenuTitle</a></p>
 	</div>
 </div>
