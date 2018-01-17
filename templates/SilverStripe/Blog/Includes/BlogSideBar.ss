@@ -1,4 +1,4 @@
-<% if $SideBarView %>
+<% if $SideBarView.Widgets %>
 	<div class="blog-sidebar typography col-sm-3">
 		$SideBarView
 	</div>
