@@ -11286,7 +11286,13 @@ header .bottom-bar {
 ****************************************/
 .main {
   padding-top: 105px;
-  background: #e9ecef;
+  background-color: #e9ecef;
+}
+
+.main.full-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .main:not(.no-pad-top) .container {
