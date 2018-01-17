@@ -1,7 +1,7 @@
-<h2 class="text-center">$MenuTitle</h2>
+<h2 class="text-center"><span>$MenuTitle</span></h2>
 <div class="row">
 	<div class="col-sm content" role="main">
-        $Content
+        <p>$Content.Summary</p>
         <% if $Address || $PhoneNumber || $Email %>
             <p>
                 <strong>Contact Info:</strong>
@@ -23,6 +23,7 @@
                 </p>
             <% end_if %>
         <% end_if %>
+        <p><a class="btn btn-link" href="$Link">$MenuTitle</a></p>
     </div>
 	<div class="col-sm" role="main">
         <% if $MapEmbed %>

@@ -1,0 +1,21 @@
+/***************************************
+    PAGE STYLES
+****************************************/
+/** HomePage **/
+.HomePage {
+    .main {
+        h1, h2,
+        .h1, .h2, {
+            margin-bottom: $grid-gutter-width;
+            border-bottom: none;
+            span {
+                display: inline-block;
+                padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
+                border-bottom: 1px solid $gray-200;
+            }
+        }
+    }
+    .section {
+        margin: $grid-gutter-width 0;
+    }
+}

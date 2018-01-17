@@ -25,6 +25,9 @@ body {
         }
     }
 }
+hr {
+    margin-bottom: $grid-gutter-width;
+}
 
 /***************************************
     HEADER STYLES
@@ -63,7 +66,7 @@ header {
     BODY STYLES
 ****************************************/
 .main {
-    padding-top: 105px;
+    padding-top: 114px;
     background-color: $main-bg;
     &.full-background {
         background-size: cover;
@@ -118,14 +121,4 @@ footer {
 }
 #WidgetHolder,nav.secondary {
     margin-bottom: $grid-gutter-width;
-}
- 
-/***************************************
-    PAGE STYLES
-****************************************/
-/** HomePage **/
-.HomePage {
-    .section {
-        margin: $grid-gutter-width 0;
-    }
 }

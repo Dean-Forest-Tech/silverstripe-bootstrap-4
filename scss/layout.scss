@@ -1,6 +1,6 @@
 @import "../bower_components/bootstrap/scss/functions";
 
-@import 'layout/_variables';
+@import 'global/_variables';
 @import "../bower_components/bootstrap/scss/variables";
 
 @import "../bower_components/bootstrap/scss/mixins";
@@ -38,5 +38,6 @@
 @import "../bower_components/bootstrap/scss/print";
 @import "../bower_components/font-awesome/scss/font-awesome.scss";
 
-@import 'layout/_typography'; 
-@import 'layout/_global';  
+@import 'global/_typography'; 
+@import 'global/_global';  
+@import 'layout/_homepage';   

@@ -16,7 +16,7 @@
 </div>
 <% if $RenderedSections %>
 	<% loop $RenderedSections %>
-		<div class="section" id="$URLSegment">
+		<div class="section $EvenOdd pos-$Pos" id="$URLSegment">
 			$Layout.RAW
 		</div>
 	<% end_loop %>
