@@ -1,8 +1,12 @@
 {
-    "name": "ilateral/silverstripe-bootstrap-theme-base",
-    "description": "A simple theme built on bootstrap 4",
+    "name": "ilateral/silverstripe-bootstrap-4",
+    "description": "A simple SilverStripe theme built on bootstrap 4",
     "type": "silverstripe-theme",
-    "keywords": ["silverstripe", "theme"],
+    "keywords": [
+        "silverstripe",
+        "theme",
+        "bootstrap4"
+    ],
     "license": "BSD-3-Clause",
     "authors": [
         {
