@@ -8,7 +8,7 @@
 
 	<p class="post-image">
 		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
-			<img class="img-fluid" src="$FeaturedImage.Fill(600,300).URL" alt="$featuredImage.Title">
+			<img class="img-fluid" src="$FeaturedImage.FocusFill(600,300).URL" alt="$featuredImage.Title">
 		</a>
 	</p>
 
