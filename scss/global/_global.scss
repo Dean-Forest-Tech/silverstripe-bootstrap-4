@@ -144,3 +144,15 @@ footer {
 #WidgetHolder,nav.secondary {
     margin-bottom: $grid-gutter-width;
 }
+
+#cookie_container {
+    @extend .bg-success;
+    @extend .text-white;
+    .cookie_inner {
+        @extend .container;
+        a {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+}

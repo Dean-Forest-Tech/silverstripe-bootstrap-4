@@ -640,7 +640,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container {
+.container, #cookie_container .cookie_inner {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -649,25 +649,25 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .container, #cookie_container .cookie_inner {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container, #cookie_container .cookie_inner {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container, #cookie_container .cookie_inner {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .container, #cookie_container .cookie_inner {
     max-width: 1140px;
   }
 }
@@ -1800,12 +1800,16 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
-.input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
-.input-group-sm > .input-group-append > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+.input-group-sm > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner
+.input-group-sm > .input-group-prepend > a.form-control-plaintext,
+.input-group-sm > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner
+.input-group-sm > .input-group-append > a.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
-.input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
-.input-group-lg > .input-group-append > .form-control-plaintext.btn {
+.input-group-lg > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner
+.input-group-lg > .input-group-prepend > a.form-control-plaintext,
+.input-group-lg > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner
+.input-group-lg > .input-group-append > a.form-control-plaintext {
   padding-right: 0;
   padding-left: 0;
 }
@@ -1813,8 +1817,10 @@ select.form-control:focus::-ms-value {
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
-.input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
+.input-group-sm > .input-group-prepend > .btn, #cookie_container .cookie_inner
+.input-group-sm > .input-group-prepend > a,
+.input-group-sm > .input-group-append > .btn, #cookie_container .cookie_inner
+.input-group-sm > .input-group-append > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1832,8 +1838,10 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
-.input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
+.input-group-lg > .input-group-prepend > .btn, #cookie_container .cookie_inner
+.input-group-lg > .input-group-prepend > a,
+.input-group-lg > .input-group-append > .btn, #cookie_container .cookie_inner
+.input-group-lg > .input-group-append > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2143,7 +2151,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
 }
 
-.btn {
+.btn, #cookie_container .cookie_inner a {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -2158,62 +2166,66 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn:focus, .btn:hover {
+.btn:focus, #cookie_container .cookie_inner a:focus, .btn:hover, #cookie_container .cookie_inner a:hover {
   text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
+.btn:focus, #cookie_container .cookie_inner a:focus, .btn.focus, #cookie_container .cookie_inner a.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
 }
 
-.btn.disabled, .btn:disabled {
+.btn.disabled, #cookie_container .cookie_inner a.disabled, .btn:disabled, #cookie_container .cookie_inner a:disabled {
   opacity: 0.65;
 }
 
-.btn:not([disabled]):not(.disabled) {
+.btn:not([disabled]):not(.disabled), #cookie_container .cookie_inner a:not([disabled]):not(.disabled) {
   cursor: pointer;
 }
 
-.btn:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active {
+.btn:not([disabled]):not(.disabled):active, #cookie_container .cookie_inner a:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, #cookie_container .cookie_inner a:not([disabled]):not(.disabled).active {
   background-image: none;
 }
 
-a.btn.disabled,
-fieldset[disabled] a.btn {
+a.btn.disabled, #cookie_container .cookie_inner a.disabled,
+fieldset[disabled] a.btn,
+fieldset[disabled] #cookie_container .cookie_inner a, #cookie_container .cookie_inner
+fieldset[disabled] a {
   pointer-events: none;
 }
 
-.btn-primary {
+.btn-primary, #cookie_container .cookie_inner a {
   color: #fff;
   background-color: #000;
   border-color: #000;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, #cookie_container .cookie_inner a:hover {
   color: #fff;
   background-color: black;
   border-color: black;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus, #cookie_container .cookie_inner a:focus, .btn-primary.focus, #cookie_container .cookie_inner a.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled, #cookie_container .cookie_inner a.disabled, .btn-primary:disabled, #cookie_container .cookie_inner a:disabled {
   background-color: #000;
   border-color: #000;
 }
 
-.btn-primary:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
+.btn-primary:not([disabled]):not(.disabled):active, #cookie_container .cookie_inner a:not([disabled]):not(.disabled):active, .btn-primary:not([disabled]):not(.disabled).active, #cookie_container .cookie_inner a:not([disabled]):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle, #cookie_container .cookie_inner
+.show > a.dropdown-toggle {
   color: #fff;
   background-color: black;
   border-color: black;
 }
 
-.btn-primary:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not([disabled]):not(.disabled):active:focus, #cookie_container .cookie_inner a:not([disabled]):not(.disabled):active:focus, .btn-primary:not([disabled]):not(.disabled).active:focus, #cookie_container .cookie_inner a:not([disabled]):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus, #cookie_container .cookie_inner
+.show > a.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
@@ -2713,14 +2725,14 @@ fieldset[disabled] a.btn {
   color: #868e96;
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, #cookie_container .cookie_inner .btn-group-lg > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0;
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, #cookie_container .cookie_inner .btn-group-sm > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2958,31 +2970,50 @@ tbody.collapse.show {
   vertical-align: middle;
 }
 
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, #cookie_container .cookie_inner .btn-group > a,
+.btn-group-vertical > .btn, #cookie_container .cookie_inner
+.btn-group-vertical > a {
   position: relative;
   flex: 0 1 auto;
 }
 
-.btn-group > .btn:hover,
-.btn-group-vertical > .btn:hover {
+.btn-group > .btn:hover, #cookie_container .cookie_inner .btn-group > a:hover,
+.btn-group-vertical > .btn:hover, #cookie_container .cookie_inner
+.btn-group-vertical > a:hover {
   z-index: 1;
 }
 
-.btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
-.btn-group-vertical > .btn:focus,
-.btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.btn-group > .btn:focus, #cookie_container .cookie_inner .btn-group > a:focus, .btn-group > .btn:active, #cookie_container .cookie_inner .btn-group > a:active, .btn-group > .btn.active, #cookie_container .cookie_inner .btn-group > a.active,
+.btn-group-vertical > .btn:focus, #cookie_container .cookie_inner
+.btn-group-vertical > a:focus,
+.btn-group-vertical > .btn:active, #cookie_container .cookie_inner
+.btn-group-vertical > a:active,
+.btn-group-vertical > .btn.active, #cookie_container .cookie_inner
+.btn-group-vertical > a.active {
   z-index: 1;
 }
 
-.btn-group .btn + .btn,
+.btn-group .btn + .btn, .btn-group #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner .btn-group a + .btn, .btn-group #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner .btn-group .btn + a, .btn-group #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner .btn-group a + a,
 .btn-group .btn + .btn-group,
+.btn-group #cookie_container .cookie_inner a + .btn-group, #cookie_container .cookie_inner
+.btn-group a + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group #cookie_container .cookie_inner .btn-group + a, #cookie_container .cookie_inner
+.btn-group .btn-group + a,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
+.btn-group-vertical #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner
+.btn-group-vertical a + .btn,
+.btn-group-vertical #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner
+.btn-group-vertical .btn + a,
+.btn-group-vertical #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner
+.btn-group-vertical a + a,
 .btn-group-vertical .btn + .btn-group,
+.btn-group-vertical #cookie_container .cookie_inner a + .btn-group, #cookie_container .cookie_inner
+.btn-group-vertical a + .btn-group,
 .btn-group-vertical .btn-group + .btn,
+.btn-group-vertical #cookie_container .cookie_inner .btn-group + a, #cookie_container .cookie_inner
+.btn-group-vertical .btn-group + a,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -2997,18 +3028,20 @@ tbody.collapse.show {
   width: auto;
 }
 
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, #cookie_container .cookie_inner .btn-group > a:first-child {
   margin-left: 0;
 }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner .btn-group > a:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn, #cookie_container .cookie_inner
+.btn-group > .btn-group:not(:last-child) > a {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.btn-group > .btn:not(:first-child),
-.btn-group > .btn-group:not(:first-child) > .btn {
+.btn-group > .btn:not(:first-child), #cookie_container .cookie_inner .btn-group > a:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn, #cookie_container .cookie_inner
+.btn-group > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3022,12 +3055,12 @@ tbody.collapse.show {
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #cookie_container .cookie_inner .btn-group-sm > a + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #cookie_container .cookie_inner .btn-group-lg > a + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3038,40 +3071,48 @@ tbody.collapse.show {
   justify-content: center;
 }
 
-.btn-group-vertical .btn,
+.btn-group-vertical .btn, .btn-group-vertical #cookie_container .cookie_inner a, #cookie_container .cookie_inner .btn-group-vertical a,
 .btn-group-vertical .btn-group {
   width: 100%;
 }
 
-.btn-group-vertical > .btn + .btn,
-.btn-group-vertical > .btn + .btn-group,
-.btn-group-vertical > .btn-group + .btn,
+.btn-group-vertical > .btn + .btn, #cookie_container .cookie_inner .btn-group-vertical > a + .btn, #cookie_container .cookie_inner .btn-group-vertical > .btn + a, #cookie_container .cookie_inner .btn-group-vertical > a + a,
+.btn-group-vertical > .btn + .btn-group, #cookie_container .cookie_inner
+.btn-group-vertical > a + .btn-group,
+.btn-group-vertical > .btn-group + .btn, #cookie_container .cookie_inner
+.btn-group-vertical > .btn-group + a,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn, #cookie_container .cookie_inner
+.btn-group-vertical > .btn-group:not(:last-child) > a {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child),
-.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+.btn-group-vertical > .btn:not(:first-child), #cookie_container .cookie_inner .btn-group-vertical > a:not(:first-child),
+.btn-group-vertical > .btn-group:not(:first-child) > .btn, #cookie_container .cookie_inner
+.btn-group-vertical > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group-toggle > .btn,
-.btn-group-toggle > .btn-group > .btn {
+.btn-group-toggle > .btn, #cookie_container .cookie_inner .btn-group-toggle > a,
+.btn-group-toggle > .btn-group > .btn, #cookie_container .cookie_inner
+.btn-group-toggle > .btn-group > a {
   margin-bottom: 0;
 }
 
-.btn-group-toggle > .btn input[type="radio"],
-.btn-group-toggle > .btn input[type="checkbox"],
-.btn-group-toggle > .btn-group > .btn input[type="radio"],
-.btn-group-toggle > .btn-group > .btn input[type="checkbox"] {
+.btn-group-toggle > .btn input[type="radio"], #cookie_container .cookie_inner .btn-group-toggle > a input[type="radio"],
+.btn-group-toggle > .btn input[type="checkbox"], #cookie_container .cookie_inner
+.btn-group-toggle > a input[type="checkbox"],
+.btn-group-toggle > .btn-group > .btn input[type="radio"], #cookie_container .cookie_inner
+.btn-group-toggle > .btn-group > a input[type="radio"],
+.btn-group-toggle > .btn-group > .btn input[type="checkbox"], #cookie_container .cookie_inner
+.btn-group-toggle > .btn-group > a input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -3141,20 +3182,36 @@ tbody.collapse.show {
   align-items: center;
 }
 
-.input-group-prepend .btn,
-.input-group-append .btn {
+.input-group-prepend .btn, .input-group-prepend #cookie_container .cookie_inner a, #cookie_container .cookie_inner .input-group-prepend a,
+.input-group-append .btn,
+.input-group-append #cookie_container .cookie_inner a, #cookie_container .cookie_inner
+.input-group-append a {
   position: relative;
   z-index: 2;
 }
 
-.input-group-prepend .btn + .btn,
+.input-group-prepend .btn + .btn, .input-group-prepend #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner .input-group-prepend a + .btn, .input-group-prepend #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner .input-group-prepend .btn + a, .input-group-prepend #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner .input-group-prepend a + a,
 .input-group-prepend .btn + .input-group-text,
+.input-group-prepend #cookie_container .cookie_inner a + .input-group-text, #cookie_container .cookie_inner
+.input-group-prepend a + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
+.input-group-prepend #cookie_container .cookie_inner .input-group-text + a, #cookie_container .cookie_inner
+.input-group-prepend .input-group-text + a,
 .input-group-append .btn + .btn,
+.input-group-append #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner
+.input-group-append a + .btn,
+.input-group-append #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner
+.input-group-append .btn + a,
+.input-group-append #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner
+.input-group-append a + a,
 .input-group-append .btn + .input-group-text,
+.input-group-append #cookie_container .cookie_inner a + .input-group-text, #cookie_container .cookie_inner
+.input-group-append a + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
-.input-group-append .input-group-text + .btn {
+.input-group-append .input-group-text + .btn,
+.input-group-append #cookie_container .cookie_inner .input-group-text + a, #cookie_container .cookie_inner
+.input-group-append .input-group-text + a {
   margin-left: -1px;
 }
 
@@ -3185,21 +3242,25 @@ tbody.collapse.show {
   margin-top: 0;
 }
 
-.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .btn, #cookie_container .cookie_inner .input-group > .input-group-prepend > a,
 .input-group > .input-group-prepend > .input-group-text,
-.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .btn, #cookie_container .cookie_inner
+.input-group > .input-group-append:not(:last-child) > a,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
-.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner
+.input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .btn, #cookie_container .cookie_inner .input-group > .input-group-append > a,
 .input-group > .input-group-append > .input-group-text,
-.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .btn, #cookie_container .cookie_inner
+.input-group > .input-group-prepend:not(:first-child) > a,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child), #cookie_container .cookie_inner
+.input-group > .input-group-prepend:first-child > a:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -3520,7 +3581,7 @@ tbody.collapse.show {
   padding: 0.5rem 1rem;
 }
 
-.navbar > .container,
+.navbar > .container, #cookie_container .navbar > .cookie_inner,
 .navbar > .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -3600,7 +3661,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 575.99px) {
-  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container, #cookie_container .navbar-expand-sm > .cookie_inner,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3626,7 +3687,7 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-  .navbar-expand-sm > .container,
+  .navbar-expand-sm > .container, #cookie_container .navbar-expand-sm > .cookie_inner,
   .navbar-expand-sm > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3644,7 +3705,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 767.99px) {
-  .navbar-expand-md > .container,
+  .navbar-expand-md > .container, #cookie_container .navbar-expand-md > .cookie_inner,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3670,7 +3731,7 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-  .navbar-expand-md > .container,
+  .navbar-expand-md > .container, #cookie_container .navbar-expand-md > .cookie_inner,
   .navbar-expand-md > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3688,7 +3749,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 991.99px) {
-  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container, #cookie_container .navbar-expand-lg > .cookie_inner,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3714,7 +3775,7 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container, #cookie_container .navbar-expand-lg > .cookie_inner,
   .navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3732,7 +3793,7 @@ tbody.collapse.show {
 }
 
 @media (max-width: 1199.99px) {
-  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container, #cookie_container .navbar-expand-xl > .cookie_inner,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -3758,7 +3819,7 @@ tbody.collapse.show {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container, #cookie_container .navbar-expand-xl > .cookie_inner,
   .navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -3780,7 +3841,7 @@ tbody.collapse.show {
   justify-content: flex-start;
 }
 
-.navbar-expand > .container,
+.navbar-expand > .container, #cookie_container .navbar-expand > .cookie_inner,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -3804,7 +3865,7 @@ tbody.collapse.show {
   padding-left: .5rem;
 }
 
-.navbar-expand > .container,
+.navbar-expand > .container, #cookie_container .navbar-expand > .cookie_inner,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
@@ -4277,7 +4338,7 @@ tbody.collapse.show {
   display: none;
 }
 
-.btn .badge {
+.btn .badge, #cookie_container .cookie_inner a .badge {
   position: relative;
   top: -1px;
 }
@@ -5528,13 +5589,15 @@ button.bg-secondary:hover {
   background-color: #b1bbc4 !important;
 }
 
-.bg-success {
+.bg-success, #cookie_container {
   background-color: #28a745 !important;
 }
 
-a.bg-success:focus, a.bg-success:hover,
+a.bg-success:focus, a#cookie_container:focus, a.bg-success:hover, a#cookie_container:hover,
 button.bg-success:focus,
-button.bg-success:hover {
+button#cookie_container:focus,
+button.bg-success:hover,
+button#cookie_container:hover {
   background-color: #1e7e34 !important;
 }
 
@@ -7987,7 +8050,7 @@ button.bg-dark:hover {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white, #cookie_container {
   color: #fff !important;
 }
 
@@ -11250,8 +11313,10 @@ body {
   background: #ced4da;
 }
 
-html .container,
-body .container {
+html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
+body .container,
+body #cookie_container .cookie_inner, #cookie_container
+body .cookie_inner {
   padding: 0 30px;
 }
 
@@ -11343,11 +11408,11 @@ header .bottom-bar {
   background-attachment: fixed;
 }
 
-.main:not(.no-pad-top) .container {
+.main:not(.no-pad-top) .container, .main:not(.no-pad-top) #cookie_container .cookie_inner, #cookie_container .main:not(.no-pad-top) .cookie_inner {
   padding-top: 30px;
 }
 
-.main .container {
+.main .container, .main #cookie_container .cookie_inner, #cookie_container .main .cookie_inner {
   background: #fff;
   padding-bottom: 15px;
 }
