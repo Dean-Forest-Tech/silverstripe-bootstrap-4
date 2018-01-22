@@ -564,7 +564,7 @@ mark,
   content: "\2014 \00A0";
 }
 
-.img-fluid {
+.img-fluid, .content img {
   max-width: 100%;
   height: auto;
 }
@@ -5706,7 +5706,7 @@ button.bg-dark:hover {
   display: inline-block !important;
 }
 
-.d-block {
+.d-block, .content img.leftAlone, .content img.center {
   display: block !important;
 }
 
@@ -6418,10 +6418,10 @@ button.bg-dark:hover {
 }
 
 @media (min-width: 576px) {
-  .float-sm-left {
+  .float-sm-left, .content img.left {
     float: left !important;
   }
-  .float-sm-right {
+  .float-sm-right, .content img.right {
     float: right !important;
   }
   .float-sm-none {
@@ -6869,7 +6869,8 @@ button.bg-dark:hover {
 }
 
 .mr-auto,
-.mx-auto {
+.mx-auto,
+.content img.center {
   margin-right: auto !important;
 }
 
@@ -6879,7 +6880,8 @@ button.bg-dark:hover {
 }
 
 .ml-auto,
-.mx-auto {
+.mx-auto,
+.content img.center {
   margin-left: auto !important;
 }
 
@@ -11210,6 +11212,30 @@ a.text-dark:focus, a.text-dark:hover {
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.content img {
+  min-width: 200px;
+  margin: 0.5rem 0;
+}
+
+.content img.left, .content img.right {
+  min-width: 200px;
+}
+
+@media (min-width: 576px) {
+  .content img.left, .content img.right {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .content img.left {
+    margin-right: 1rem;
+  }
+  .content img.right {
+    margin-left: 1rem;
+  }
 }
 
 /***************************************
