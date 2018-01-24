@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "popper.js": "^1.12.9",
-    "font-awesome": "fontawesome#^4.7.0",
+    "font-awesome": "5.0.0-wip",
     "matchHeight": "matchheight#^0.7.2",
     "imagesloaded": "^4.1.4",
     "bootstrap": "4.0.0-beta.3",
