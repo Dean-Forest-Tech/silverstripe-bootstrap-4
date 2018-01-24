@@ -66,6 +66,10 @@
 		<% require javascript("themes/bootstrap/bower_components/popper.js/dist/umd/popper.js") %>
 		<% require javascript("themes/bootstrap/bower_components/tether/dist/js/tether.js") %>
 		<% require javascript("themes/bootstrap/bower_components/bootstrap/dist/js/bootstrap.js") %>
+		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome/index.js") %>
+		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-solid/index.js") %>
+		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-regular/index.js") %>
+		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-brands/index.js") %>
 
 		<link rel="shortcut icon" href="themes/bootstrap/images/favicon.ico" />
 	</head>
