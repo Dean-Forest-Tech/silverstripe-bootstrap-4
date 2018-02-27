@@ -9349,4 +9349,10 @@ footer .row {
 .HomePage .section {
   margin: 30px 0;
 }
-/*# sourceMappingURL=layout.css.map */
+
+html,
+body {
+  background: #e9ecef;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=editor.css.map */
