@@ -59,7 +59,7 @@ header {
             position: absolute;
             bottom: -6px;
             right: 0;
-            z-index: 9999;       
+            z-index: 9;       
             li {
                 &.active {
                     border-bottom: 5px solid $header-top-border-colour;
@@ -155,4 +155,8 @@ footer {
             @extend .btn-primary;
         }
     }
+}
+
+.gallery-modal {
+    z-index: 9999 !important;
 }
