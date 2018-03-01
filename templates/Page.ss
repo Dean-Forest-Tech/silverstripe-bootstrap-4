@@ -60,10 +60,10 @@
 
 		<% require themedCSS('layout') %>
 
-		<% require javascript("themes/bootstrap/bower_components/jquery/dist/jquery.js") %>
-		<% require javascript("themes/bootstrap/bower_components/popper.js/dist/umd/popper.js") %>
-		<% require javascript("themes/bootstrap/bower_components/tether/dist/js/tether.js") %>
-		<% require javascript("themes/bootstrap/bower_components/bootstrap/dist/js/bootstrap.js") %>
+		<% require javascript("themes/bootstrap/node_modules/jquery/dist/jquery.min.js") %>
+		<% require javascript("themes/bootstrap/node_modules/popper.js/dist/umd/popper.min.js") %>
+		<% require javascript("themes/bootstrap/node_modules/tether/dist/js/tether.min.js") %>
+		<% require javascript("themes/bootstrap/node_modules/bootstrap/dist/js/bootstrap.min.js") %>
 		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome/index.js") %>
 		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-solid/index.js") %>
 		<% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-regular/index.js") %>
