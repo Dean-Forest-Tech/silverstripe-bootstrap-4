@@ -58,7 +58,7 @@
 			<link rel="apple-touch-icon" sizes="152x152" href="themes/bootstrap/icons/icon-152.png">
 		<% end_if %>
 
-		<% require themedCSS('layout') %>
+		<% require themedCSS('layout.min') %>
 
 		<% require javascript("themes/bootstrap/node_modules/jquery/dist/jquery.min.js") %>
 		<% require javascript("themes/bootstrap/node_modules/popper.js/dist/umd/popper.min.js") %>
