@@ -13,9 +13,9 @@
 		<% loop $PaginationSummary(4) %>
 			<li class="page-item <% if not $Link || $CurrentBool %>disabled<% end_if %>">
 				<% if $Link %>
-					<a class="page-link<% if $CurrentBool %> bg-success<% else %> bg-primary<% end_if %> text-white" href="$Link">$PageNum</a></li>
+					<a class="page-link<% if $CurrentBool %> bg-success<% else %> bg-primary<% end_if %> text-white" href="$Link">$PageNum</a>
 				<% else %>
-					<span class="bg-secondary text-white">...</span></li>
+					<span class="bg-secondary text-white">...</span>
 				<% end_if %>
 			</li>
 		<% end_loop %>
