@@ -1633,47 +1633,47 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
-.form-inline, #Form_SearchForm {
+.form-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
-  .form-inline .form-check, #Form_SearchForm .form-check {
+  .form-inline .form-check {
     width: 100%; }
   @media (min-width: 576px) {
-    .form-inline label, #Form_SearchForm label {
+    .form-inline label {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 0; }
-    .form-inline .form-group, #Form_SearchForm .form-group {
+    .form-inline .form-group {
       display: flex;
       flex: 0 0 auto;
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, #Form_SearchForm .form-control {
+    .form-inline .form-control {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
-    .form-inline .form-control-plaintext, #Form_SearchForm .form-control-plaintext {
+    .form-inline .form-control-plaintext {
       display: inline-block; }
-    .form-inline .input-group, #Form_SearchForm .input-group {
+    .form-inline .input-group {
       width: auto; }
-    .form-inline .form-check, #Form_SearchForm .form-check {
+    .form-inline .form-check {
       display: flex;
       align-items: center;
       justify-content: center;
       width: auto;
       padding-left: 0; }
-    .form-inline .form-check-input, #Form_SearchForm .form-check-input {
+    .form-inline .form-check-input {
       position: relative;
       margin-top: 0;
       margin-right: 0.25rem;
       margin-left: 0; }
-    .form-inline .custom-control, #Form_SearchForm .custom-control {
+    .form-inline .custom-control {
       align-items: center;
       justify-content: center; }
-    .form-inline .custom-control-label, #Form_SearchForm .custom-control-label {
+    .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
 .btn, #cookie_container .cookie_inner a {
@@ -1732,29 +1732,27 @@ fieldset:disabled a {
     .show > a.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
-.btn-secondary, #Form_SearchForm button.btn-primary {
+.btn-secondary {
   color: #212529;
   background-color: #ced4da;
   border-color: #ced4da; }
-  .btn-secondary:hover, #Form_SearchForm button.btn-primary:hover {
+  .btn-secondary:hover {
     color: #212529;
     background-color: #b8c1ca;
     border-color: #b1bbc4; }
-  .btn-secondary:focus, #Form_SearchForm button.btn-primary:focus, .btn-secondary.focus, #Form_SearchForm button.focus.btn-primary {
+  .btn-secondary:focus, .btn-secondary.focus {
     box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
-  .btn-secondary.disabled, #Form_SearchForm button.disabled.btn-primary, .btn-secondary:disabled, #Form_SearchForm button.btn-primary:disabled {
+  .btn-secondary.disabled, .btn-secondary:disabled {
     color: #212529;
     background-color: #ced4da;
     border-color: #ced4da; }
-  .btn-secondary:not(:disabled):not(.disabled):active, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-secondary.dropdown-toggle, #Form_SearchForm
-  .show > button.dropdown-toggle.btn-primary {
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
     color: #212529;
     background-color: #b1bbc4;
     border-color: #aab4bf; }
-    .btn-secondary:not(:disabled):not(.disabled):active:focus, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-secondary.dropdown-toggle:focus, #Form_SearchForm
-    .show > button.dropdown-toggle.btn-primary:focus {
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
 
 .btn-success {
@@ -6210,6 +6208,14 @@ a.text-dark:hover, a.text-dark:focus {
     .content img.right {
       margin-left: 1rem; } }
 
+/**
+* Styling for default searchform (if installed)
+*/
+.search-bar {
+  text-align: right; }
+  .search-bar form .field {
+    display: inline-block; }
+
 /***************************************
     CORE STYLES
 ****************************************/
@@ -6224,13 +6230,6 @@ body {
   body #cookie_container .cookie_inner, #cookie_container
   body .cookie_inner {
     padding: 0 30px; }
-
-#Form_SearchForm {
-  margin-bottom: 15px; }
-  #Form_SearchForm button.btn-primary {
-    margin: 0; }
-    #Form_SearchForm button.btn-primary:after, #Form_SearchForm button.btn-primary:before {
-      display: none; }
 
 .secondary .nav-pills .nav {
   padding: 7.5px; }
