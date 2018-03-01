@@ -11,18 +11,6 @@ body {
         padding: 0 $grid-gutter-width;
     }
 }
-#Form_SearchForm {
-    @extend .form-inline;
-    margin-bottom: $grid-gutter-width/2;
-    button.btn-primary {
-        @extend .btn-secondary;
-        margin: 0;
-        &:after,
-        &:before {
-            display: none;
-        }
-    }
-}
 .secondary {
     .nav-pills {
         .nav {

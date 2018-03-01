@@ -1,0 +1,10 @@
+/**
+* Styling for default searchform (if installed)
+*/
+.search-bar {
+    text-align: right;
+    
+    form .field {
+        display: inline-block;
+    }
+}
