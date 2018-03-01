@@ -19,7 +19,7 @@
 					</p>
 				<% end_if %>
 			</div>
-			<div class="col-sm">
+			<div class="col-sm <% if $SearchForm %>searchform-enabled<% end_if %>">
 				<% with $SiteConfig.ContactPage %>
                     <ul class="nav justify-content-end">
                         <% if $PhoneNumber %>
@@ -35,7 +35,6 @@
                     </ul>
                 <% end_with %>
 				<% if $SearchForm %>
-					<span class="search-dropdown-icon">L</span>
 					<div class="search-bar">
 						$SearchForm
 					</div>
