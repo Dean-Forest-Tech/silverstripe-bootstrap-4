@@ -1,3 +1,5 @@
 webfonts/.DS_Store
 images/.DS_Store
 css/.DS_Store
+.sass-cache
+npm-debug.log

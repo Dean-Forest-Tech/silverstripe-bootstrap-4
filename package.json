@@ -1,17 +1,23 @@
 {
   "name": "bootstrap",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:i-lateral/silverstripe-bootstrap-4.git",
-  "author": "Makreig <mark@i-lateral.com>",
-  "license": "MIT",
-  "private": true,
+  "description": "SilverStripe Theme using Bootstrap 4",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.2",
-    "@fortawesome/fontawesome-free-brands": "^5.0.4",
-    "@fortawesome/fontawesome-free-regular": "^5.0.4",
-    "@fortawesome/fontawesome-free-solid": "^5.0.4",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.9"
-  }
+    "@fortawesome/fontawesome": "^1.1.4",
+    "bootstrap": "^4.0.0",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.3.1",
+    "matchheight": "^0.1.0",
+    "popper.js": "^1.12.9",
+    "tether": "^1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-lateral/silverstripe-bootstrap-4.git"
+  },
+  "license": "BSD 3-Clause",
+  "bugs": {
+    "url": "https://github.com/i-lateral/silverstripe-bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/i-lateral/silverstripe-bootstrap-4#readme"
 }
