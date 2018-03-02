@@ -10,12 +10,10 @@
         </aside>
     <% end_if %>
 
-    <div class="content-container col-sm-12 <% if $ShowSideBar && $Menu(2).exists %>col-md-9 size3of4 lastUnit<% end_if %>">
+    <div class="content-container col-sm-12 <% if $ShowSideBar && $Menu(2).exists %>col-md-9<% end_if %>">
         <article class="gallery-page">
-        
-            $Gallery
-
             <div class="content">$Content</div>
+            $Gallery
         </article>
 
         $Form
