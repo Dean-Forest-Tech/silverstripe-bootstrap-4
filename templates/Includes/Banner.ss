@@ -9,7 +9,7 @@
         </div>	
     <% end_if %>
     <div class="col">
-        <h1 class="text-center">
+        <h1<% if not $Level(2) %> class="text-center"<% end_if %>>
             $Title
         </h1>
     </div>
