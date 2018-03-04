@@ -6229,7 +6229,13 @@ body {
   body .container,
   body #cookie_container .cookie_inner, #cookie_container
   body .cookie_inner {
-    padding: 0 30px; }
+    padding: 0 15px; }
+  @media (min-width: 768px) {
+    html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
+    body .container,
+    body #cookie_container .cookie_inner, #cookie_container
+    body .cookie_inner {
+      padding: 0 30px; } }
 
 hr {
   margin-bottom: 30px; }
@@ -6245,7 +6251,7 @@ header {
   border-top: 7px solid #ebeef0; }
   header a {
     color: #fff; }
-  @media screen and (max-width: grid-breakpoint("sm")) {
+  @media (min-width: 576px) {
     header .navbar {
       padding-bottom: 0;
       position: absolute;
@@ -6254,6 +6260,9 @@ header {
       z-index: 9; }
       header .navbar li.active {
         border-bottom: 5px solid #ebeef0; } }
+  @media (min-width: 768px) {
+    header .container, header #cookie_container .cookie_inner, #cookie_container header .cookie_inner {
+      padding: 0; } }
   header .navbar-toggler {
     position: absolute;
     left: 15px;
@@ -6279,7 +6288,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed; }
   .main:not(.no-pad-top) .container, .main:not(.no-pad-top) #cookie_container .cookie_inner, #cookie_container .main:not(.no-pad-top) .cookie_inner {
-    padding-top: 30px; }
+    padding-top: 15px; }
   .main .container, .main #cookie_container .cookie_inner, #cookie_container .main .cookie_inner {
     background: #fff;
     padding-bottom: 15px; }
@@ -6302,6 +6311,8 @@ footer {
   padding-bottom: 15px;
   color: #343a40;
   font-size: 0.9rem; }
+  footer .container, footer #cookie_container .cookie_inner, #cookie_container footer .cookie_inner {
+    padding: 0; }
   footer a {
     color: #343a40; }
     footer a.active {

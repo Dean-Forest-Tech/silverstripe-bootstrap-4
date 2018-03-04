@@ -10,7 +10,8 @@ header {
     a {
         color: $white;      
     }
-    @media screen and (max-width: grid-breakpoint("sm")) {
+
+    @include media-breakpoint-up(sm) {
         .navbar {
             padding-bottom: 0;
             position: absolute;
@@ -22,6 +23,12 @@ header {
                     border-bottom: 5px solid $header-top-border-colour;
                 }  
             }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .container {
+            padding: 0;
         }
     }
     .navbar-toggler {
