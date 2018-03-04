@@ -10,7 +10,7 @@
         background-attachment: fixed;
     }
     &:not(.no-pad-top) .container {
-        padding-top: $grid-gutter-width;
+        padding-top: $grid-gutter-width/2;
     }
     .container {
         background: $white;

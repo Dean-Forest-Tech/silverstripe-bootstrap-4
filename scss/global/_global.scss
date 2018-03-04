@@ -8,7 +8,13 @@ html,
 body {
     background: $footer-background;
     .container {
-        padding: 0 $grid-gutter-width;
+        padding: 0 $grid-gutter-width/2;
+    }
+
+    @include media-breakpoint-up(md) {
+        .container {
+            padding: 0 $grid-gutter-width;
+        }
     }
 }
 hr {
