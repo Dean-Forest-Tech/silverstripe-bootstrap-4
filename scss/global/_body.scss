@@ -1,0 +1,36 @@
+/***************************************
+    BODY STYLES
+****************************************/
+.main {
+    padding-top: 114px;
+    background-color: $main-bg;
+    &.full-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    &:not(.no-pad-top) .container {
+        padding-top: $grid-gutter-width;
+    }
+    .container {
+        background: $white;
+        padding-bottom: $grid-gutter-width/2;
+    }
+    .banner-image {
+        margin-bottom: $grid-gutter-width;
+    }
+    .secondary {
+        .nav-pills {
+            .nav {
+                padding: $grid-gutter-width/4;
+                .active {
+                    background: transparent;
+                    color: $sub-nav-active-colour;
+                }
+            }
+            .active {
+                border-radius: 0;
+            }
+        }
+    }
+}

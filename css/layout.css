@@ -6231,15 +6231,6 @@ body {
   body .cookie_inner {
     padding: 0 30px; }
 
-.secondary .nav-pills .nav {
-  padding: 7.5px; }
-  .secondary .nav-pills .nav .active {
-    background: transparent;
-    color: #868e96; }
-
-.secondary .nav-pills .active {
-  border-radius: 0; }
-
 hr {
   margin-bottom: 30px; }
 
@@ -6294,6 +6285,13 @@ header {
     padding-bottom: 15px; }
   .main .banner-image {
     margin-bottom: 30px; }
+  .main .secondary .nav-pills .nav {
+    padding: 7.5px; }
+    .main .secondary .nav-pills .nav .active {
+      background: transparent;
+      color: #868e96; }
+  .main .secondary .nav-pills .active {
+    border-radius: 0; }
 
 /***************************************
     FOOTER STYLES
@@ -6324,7 +6322,8 @@ footer {
   .embed-responsive.embed-responsive-map {
     padding-bottom: 300px; }
 
-#WidgetHolder, nav.secondary {
+#WidgetHolder,
+nav.secondary {
   margin-bottom: 30px; }
 
 .gallery-modal {

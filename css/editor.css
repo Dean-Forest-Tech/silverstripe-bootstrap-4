@@ -1633,47 +1633,47 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
-.form-inline, #Form_SearchForm {
+.form-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
-  .form-inline .form-check, #Form_SearchForm .form-check {
+  .form-inline .form-check {
     width: 100%; }
   @media (min-width: 576px) {
-    .form-inline label, #Form_SearchForm label {
+    .form-inline label {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 0; }
-    .form-inline .form-group, #Form_SearchForm .form-group {
+    .form-inline .form-group {
       display: flex;
       flex: 0 0 auto;
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, #Form_SearchForm .form-control {
+    .form-inline .form-control {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
-    .form-inline .form-control-plaintext, #Form_SearchForm .form-control-plaintext {
+    .form-inline .form-control-plaintext {
       display: inline-block; }
-    .form-inline .input-group, #Form_SearchForm .input-group {
+    .form-inline .input-group {
       width: auto; }
-    .form-inline .form-check, #Form_SearchForm .form-check {
+    .form-inline .form-check {
       display: flex;
       align-items: center;
       justify-content: center;
       width: auto;
       padding-left: 0; }
-    .form-inline .form-check-input, #Form_SearchForm .form-check-input {
+    .form-inline .form-check-input {
       position: relative;
       margin-top: 0;
       margin-right: 0.25rem;
       margin-left: 0; }
-    .form-inline .custom-control, #Form_SearchForm .custom-control {
+    .form-inline .custom-control {
       align-items: center;
       justify-content: center; }
-    .form-inline .custom-control-label, #Form_SearchForm .custom-control-label {
+    .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
 .btn, #cookie_container .cookie_inner a {
@@ -1732,29 +1732,27 @@ fieldset:disabled a {
     .show > a.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
-.btn-secondary, #Form_SearchForm button.btn-primary {
+.btn-secondary {
   color: #212529;
   background-color: #ced4da;
   border-color: #ced4da; }
-  .btn-secondary:hover, #Form_SearchForm button.btn-primary:hover {
+  .btn-secondary:hover {
     color: #212529;
     background-color: #b8c1ca;
     border-color: #b1bbc4; }
-  .btn-secondary:focus, #Form_SearchForm button.btn-primary:focus, .btn-secondary.focus, #Form_SearchForm button.focus.btn-primary {
+  .btn-secondary:focus, .btn-secondary.focus {
     box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
-  .btn-secondary.disabled, #Form_SearchForm button.disabled.btn-primary, .btn-secondary:disabled, #Form_SearchForm button.btn-primary:disabled {
+  .btn-secondary.disabled, .btn-secondary:disabled {
     color: #212529;
     background-color: #ced4da;
     border-color: #ced4da; }
-  .btn-secondary:not(:disabled):not(.disabled):active, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-secondary.dropdown-toggle, #Form_SearchForm
-  .show > button.dropdown-toggle.btn-primary {
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
     color: #212529;
     background-color: #b1bbc4;
     border-color: #aab4bf; }
-    .btn-secondary:not(:disabled):not(.disabled):active:focus, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, #Form_SearchForm button.btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-secondary.dropdown-toggle:focus, #Form_SearchForm
-    .show > button.dropdown-toggle.btn-primary:focus {
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
 
 .btn-success {
@@ -6225,92 +6223,8 @@ body {
   body .cookie_inner {
     padding: 0 30px; }
 
-#Form_SearchForm {
-  margin-bottom: 15px; }
-  #Form_SearchForm button.btn-primary {
-    margin: 0; }
-    #Form_SearchForm button.btn-primary:after, #Form_SearchForm button.btn-primary:before {
-      display: none; }
-
-.secondary .nav-pills .nav {
-  padding: 7.5px; }
-  .secondary .nav-pills .nav .active {
-    background: transparent;
-    color: #868e96; }
-
-.secondary .nav-pills .active {
-  border-radius: 0; }
-
 hr {
   margin-bottom: 30px; }
-
-/***************************************
-    HEADER STYLES
-****************************************/
-header {
-  background: #000;
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
-  color: #fff;
-  border-top: 7px solid #ebeef0; }
-  header a {
-    color: #fff; }
-  @media screen and (max-width: grid-breakpoint("sm")) {
-    header .navbar {
-      padding-bottom: 0;
-      position: absolute;
-      bottom: -6px;
-      right: 0;
-      z-index: 9; }
-      header .navbar li.active {
-        border-bottom: 5px solid #ebeef0; } }
-  header .navbar-toggler {
-    position: absolute;
-    left: 15px;
-    top: 0;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
-  header .bottom-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 7px solid #ced4da; }
-
-/***************************************
-    BODY STYLES
-****************************************/
-.main {
-  padding-top: 114px;
-  background-color: #e9ecef; }
-  .main.full-background {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
-  .main:not(.no-pad-top) .container, .main:not(.no-pad-top) #cookie_container .cookie_inner, #cookie_container .main:not(.no-pad-top) .cookie_inner {
-    padding-top: 30px; }
-  .main .container, .main #cookie_container .cookie_inner, #cookie_container .main .cookie_inner {
-    background: #fff;
-    padding-bottom: 15px; }
-  .main .banner-image {
-    margin-bottom: 30px; }
-
-/***************************************
-    FOOTER STYLES
-****************************************/
-footer {
-  background: #ced4da;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #343a40;
-  font-size: 0.9rem; }
-  footer a {
-    color: #343a40; }
-    footer a.active {
-      color: rgba(52, 58, 64, 0.5); }
-  footer .row {
-    margin-bottom: 15px; }
 
 /***************************************
     MISC STYLES
@@ -6325,28 +6239,12 @@ footer {
   .embed-responsive.embed-responsive-map {
     padding-bottom: 300px; }
 
-#WidgetHolder, nav.secondary {
+#WidgetHolder,
+nav.secondary {
   margin-bottom: 30px; }
 
 .gallery-modal {
   z-index: 9999 !important; }
-
-/***************************************
-    PAGE STYLES
-****************************************/
-/** HomePage **/
-.HomePage .main h1, .HomePage .main h2,
-.HomePage .main .h1, .HomePage .main .h2 {
-  margin-bottom: 30px;
-  border-bottom: none; }
-  .HomePage .main h1 span, .HomePage .main h2 span,
-  .HomePage .main .h1 span, .HomePage .main .h2 span {
-    display: inline-block;
-    padding: 0 15px 15px;
-    border-bottom: 1px solid #e9ecef; }
-
-.HomePage .section {
-  margin: 30px 0; }
 
 html, body {
   background: #e9ecef;
