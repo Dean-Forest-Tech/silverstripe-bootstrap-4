@@ -1,3 +1,5 @@
+<% include Banner %>
+
 <div class="row">
 	<% if $Menu(2) || $SideBarView.Widgets %>
 		<aside class="col-sm col-sm-3" role="complementary">
