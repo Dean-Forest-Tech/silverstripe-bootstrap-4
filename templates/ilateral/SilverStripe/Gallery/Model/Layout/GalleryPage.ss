@@ -3,6 +3,8 @@
 <% require javascript("i-lateral/silverstripe-gallery: node_modules/tingle.js/dist/tingle.min.js") %>
 <% require javascript("i-lateral/silverstripe-gallery: client/dist/javascript/gallery.min.js") %>
 
+<% include Banner %>
+
 <div class="row">
     <% if $ShowSideBar && $Menu(2).exists %>
         <aside class="col-sm col-sm-3" role="complementary">

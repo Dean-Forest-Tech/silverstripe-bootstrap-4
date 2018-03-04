@@ -1,4 +1,4 @@
-<% require themedCSS('blog', 'blog') %>
+<% include Banner %>
 
 <div class="row">
 	<div class="blog-entry content-container col-sm">
