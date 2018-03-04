@@ -1,3 +1,5 @@
+<% include Banner %>
+
 <div id="Content" class="searchResults">
     <h1>$Title</h1>
 
