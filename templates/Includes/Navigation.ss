@@ -1,8 +1,4 @@
-<nav class="col navbar navbar-expand-md navbar-light">
-	<button class="navbar-toggler ml-sm-auto" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-  
+<nav class="col navbar navbar-expand-lg navbar-light navbar-main">  
 	<div class="collapse navbar-collapse" id="MainNav">
 	  <ul class="navbar-nav ml-sm-auto">
 			<% if $CustomMenu('main-menu') %>

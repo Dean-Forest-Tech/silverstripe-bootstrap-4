@@ -9547,15 +9547,15 @@ header a {
   color: #fff;
 }
 
-@media (min-width: 576px) {
-  header .navbar {
+@media (min-width: 992px) {
+  header .navbar-main {
     padding-bottom: 0;
     position: absolute;
     bottom: -6px;
     right: 0;
     z-index: 9;
   }
-  header .navbar li.active {
+  header .navbar-main li.active {
     border-bottom: 5px solid #ebeef0;
   }
 }
@@ -9564,14 +9564,6 @@ header a {
   header .container, header #cookie_container .cookie_inner, #cookie_container header .cookie_inner {
     padding: 0;
   }
-}
-
-header .navbar-toggler {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
 }
 
 header .bottom-bar {
@@ -9586,7 +9578,6 @@ header .bottom-bar {
     BODY STYLES
 ****************************************/
 .main {
-  padding-top: 114px;
   background-color: #e9ecef;
 }
 
