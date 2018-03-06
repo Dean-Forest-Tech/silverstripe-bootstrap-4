@@ -237,13 +237,20 @@ $spacers: (
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
-  5: ($spacer * 3)
-) !default;
+  5: ($spacer * 2),
+  6: ($spacer * 3)
+);
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: (
+  10: 10%,
+  20: 20%,
   25: 25%,
+  33: 33%,
+  40: 40%,
   50: 50%,
+  60: 60%,
+  66: 66%,
   75: 75%,
   100: 100%
 ) !default;
