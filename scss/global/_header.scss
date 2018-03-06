@@ -11,8 +11,8 @@ header {
         color: $white;      
     }
 
-    @include media-breakpoint-up(sm) {
-        .navbar {
+    @include media-breakpoint-up(lg) {
+        .navbar-main {
             padding-bottom: 0;
             position: absolute;
             bottom: -6px;
@@ -30,14 +30,6 @@ header {
         .container {
             padding: 0;
         }
-    }
-    .navbar-toggler {
-        position: absolute;
-        left: $grid-gutter-width/2;
-        top: 0;
-        -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-                transform: translateY(-100%);
     }
     .bottom-bar {
         position: absolute;
