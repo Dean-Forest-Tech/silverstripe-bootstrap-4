@@ -5,16 +5,16 @@
 				<h1>				
 					<a href="$BaseHref" class="brand" rel="home">
 						<% if $SiteConfig.Logo %>
-							<img class="img-fluid" src="$SiteConfig.Logo.ScaleHeight(50).URL" alt="$SiteConfig.Title">
+							<img class="img-fluid" src="$SiteConfig.Logo.ScaleHeight(80).Link" alt="$SiteConfig.Title - $SiteConfig.Tagline">
 						<% else %>
 							$SiteConfig.Title
 						<% end_if %>
 					</a>
 				</h1>
-				<% if $SiteConfig.Tagline %>
+				<% if not $SiteConfig.Logo && $SiteConfig.Tagline %>
 					<p class="d-none d-sm-block">
 						<a href="$BaseHref" class="brand" rel="home">
-								$SiteConfig.Tagline
+							$SiteConfig.Tagline
 						</a>
 					</p>
 				<% end_if %>
