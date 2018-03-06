@@ -1,25 +1,22 @@
 <% include Banner %>
 
-<div class="row">
-	<div class="blog-entry content-container col-sm">
+<div class="blog-entry content-container col-sm">
+	<% include SilverStripe\\Blog\\MemberDetails %>
 
-		<% include SilverStripe\\Blog\\MemberDetails %>
+	<% if $PaginatedList.Exists %>
+		<h2>Posts by $CurrentProfile.FirstName $CurrentProfile.Surname for $Title:</h2>
+		<% loop $PaginatedList %>
+			<% include SilverStripe\\Blog\\PostSummary %>
+		<% end_loop %>
+	<% end_if %>
 
-		<% if $PaginatedList.Exists %>
-			<h2>Posts by $CurrentProfile.FirstName $CurrentProfile.Surname for $Title:</h2>
-			<% loop $PaginatedList %>
-				<% include SilverStripe\\Blog\\PostSummary %>
-			<% end_loop %>
-		<% end_if %>
+	$Form
+	$CommentsForm
 
-		$Form
-		$CommentsForm
+	<% with $PaginatedList %>
+		<% include SilverStripe\\Blog\\Pagination %>
+	<% end_with %>
 
-		<% with $PaginatedList %>
-			<% include SilverStripe\\Blog\\Pagination %>
-		<% end_with %>
-
-	</div>
-
-	<% include SilverStripe\\Blog\\BlogSideBar %>
 </div>
+
+<% include SilverStripe\\Blog\\BlogSideBar %>

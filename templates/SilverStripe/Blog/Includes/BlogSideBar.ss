@@ -1,5 +1,5 @@
 <% if $SideBarView.Widgets %>
-	<div class="blog-sidebar typography col-sm-3">
+	<aside class="blog-sidebar typography col-sm-3 col-sm" role="complementary">
 		$SideBarView
-	</div>
+	</aside>
 <% end_if %>

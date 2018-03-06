@@ -5,20 +5,16 @@
 
 <% include Banner %>
 
-<div class="row">
-    <% if $ShowSideBar && $Menu(2).exists %>
-        <aside class="col-sm col-sm-3" role="complementary">
-			<% include SideBar %>
-        </aside>
-    <% end_if %>
+<% if $ShowSideBar && $Menu(2).exists %>
+    <% include SideBar %>
+<% end_if %>
 
-    <div class="content-container col-sm-12 <% if $ShowSideBar && $Menu(2).exists %>col-md-9<% end_if %>">
-        <article class="gallery-page">
-            <div class="content">$Content</div>
-            $Gallery
-        </article>
+<div class="content-container col-sm">
+    <article class="gallery-page">
+        <div class="content">$Content</div>
+        $Gallery
+    </article>
 
-        $Form
-        $PageComments
-    </div>
+    $Form
+    $PageComments
 </div>
