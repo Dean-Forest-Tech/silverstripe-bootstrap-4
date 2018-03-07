@@ -9489,6 +9489,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.btn, #cookie_container .cookie_inner a {
+  white-space: normal;
+}
+
 /***************************************
     CORE STYLES
 ****************************************/

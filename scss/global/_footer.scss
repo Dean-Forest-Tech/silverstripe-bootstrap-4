@@ -7,10 +7,6 @@ footer {
     padding-bottom: $grid-gutter-width/2;
     color: $footer-colour;
     font-size: 0.9rem;
-
-    .container {
-        padding: 0;
-    }
     a {
         color: $footer-colour;
         &.active {
