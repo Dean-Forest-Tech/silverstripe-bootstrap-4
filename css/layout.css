@@ -9560,12 +9560,6 @@ header a {
   }
 }
 
-@media (min-width: 768px) {
-  header .container, header #cookie_container .cookie_inner, #cookie_container header .cookie_inner {
-    padding: 0;
-  }
-}
-
 header .bottom-bar {
   position: absolute;
   bottom: 0;
@@ -9622,10 +9616,6 @@ footer {
   padding-bottom: 15px;
   color: #343a40;
   font-size: 0.9rem;
-}
-
-footer .container, footer #cookie_container .cookie_inner, #cookie_container footer .cookie_inner {
-  padding: 0;
 }
 
 footer a {
