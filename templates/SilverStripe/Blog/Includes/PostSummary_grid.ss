@@ -9,9 +9,9 @@
 	<p class="post-image">
 		<a href="$Link" title="<%t SilverStripe\\Blog\\Model\\Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 			<% if $FeaturedImage %>
-				<img class="img-fluid" src="$FeaturedImage.FocusFill(600,300).URL" alt="$FeaturedImage.Title">
+				<img class="img-fluid" src="$FeaturedImage.Fill(600,300).URL" alt="$FeaturedImage.Title">
 			<% else %>
-				<img class="img-fluid" src="$Parent.FeaturedImage.FocusFill(600,300).URL" alt="$Parent.FeaturedImage.Title">
+				<img class="img-fluid" src="$Parent.FeaturedImage.Fill(600,300).URL" alt="$Parent.FeaturedImage.Title">
 			<% end_if %>
 		</a>
 	</p>
