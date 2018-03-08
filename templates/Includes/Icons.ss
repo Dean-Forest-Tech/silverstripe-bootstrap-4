@@ -1,16 +1,16 @@
 <% if $SiteConfig.Icon %>
-    <link rel="shortcut icon" href="$SiteConfig.Icon.FocusFill(16,16).URL">
-    <link rel="icon" sizes="16x16" href="$SiteConfig.Icon.FocusFill(16,16).URL" />
-    <link rel="icon" sizes="32x32" href="$SiteConfig.Icon.FocusFill(32,32).URL" />
-    <link rel="icon" sizes="48x48" href="$SiteConfig.Icon.FocusFill(48,48).URL" />
-    <link rel="icon" sizes="64x64" href="$SiteConfig.Icon.FocusFill(64,64).URL" />
-    <link rel="icon" sizes="128x128" href="$SiteConfig.Icon.FocusFill(128,128).URL" />
-    <link rel="icon" sizes="196x196" href="$SiteConfig.Icon.FocusFill(196,196).URL" />
+    <link rel="shortcut icon" href="$SiteConfig.Icon.Fill(16,16).URL">
+    <link rel="icon" sizes="16x16" href="$SiteConfig.Icon.Fill(16,16).URL" />
+    <link rel="icon" sizes="32x32" href="$SiteConfig.Icon.Fill(32,32).URL" />
+    <link rel="icon" sizes="48x48" href="$SiteConfig.Icon.Fill(48,48).URL" />
+    <link rel="icon" sizes="64x64" href="$SiteConfig.Icon.Fill(64,64).URL" />
+    <link rel="icon" sizes="128x128" href="$SiteConfig.Icon.Fill(128,128).URL" />
+    <link rel="icon" sizes="196x196" href="$SiteConfig.Icon.Fill(196,196).URL" />
 
-    <link rel="apple-touch-icon" href="$SiteConfig.Icon.FocusFill(60,60).URL" />
-    <link rel="apple-touch-icon" sizes="76x76" href="$SiteConfig.Icon.FocusFill(76,76).URL">
-    <link rel="apple-touch-icon" sizes="120x120" href="$SiteConfig.Icon.FocusFill(120,120).URL">
-    <link rel="apple-touch-icon" sizes="152x152" href="$SiteConfig.Icon.FocusFill(152,152).URL">
+    <link rel="apple-touch-icon" href="$SiteConfig.Icon.Fill(60,60).URL" />
+    <link rel="apple-touch-icon" sizes="76x76" href="$SiteConfig.Icon.Fill(76,76).URL">
+    <link rel="apple-touch-icon" sizes="120x120" href="$SiteConfig.Icon.Fill(120,120).URL">
+    <link rel="apple-touch-icon" sizes="152x152" href="$SiteConfig.Icon.Fill(152,152).URL">
 <% else %>
     <link rel="shortcut icon" href="themes/bootstrap/icons/icon-16.png">
     <link rel="icon" sizes="16x16" href="themes/bootstrap/icons/icon-16.png" />
