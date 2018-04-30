@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../fonts/OpenSans-Light.ttf"
+    ],
+    "names": [],
+    "file": "OpenSans-Light.css"
+}

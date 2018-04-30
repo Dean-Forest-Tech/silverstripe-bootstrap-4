@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../fonts/OpenSans-BoldItalic.ttf"
+    ],
+    "names": [],
+    "file": "OpenSans-BoldItalic.css"
+}

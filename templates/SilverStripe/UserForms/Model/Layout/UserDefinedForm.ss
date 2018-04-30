@@ -3,9 +3,7 @@
 
 	<div class="row">
 		<% if $Menu(2) || $SideBarView.Widgets %>
-			<aside class="col-sm col-sm-auto" role="complementary">
-				<% include SideBar %>
-			</aside>
+			<% include SideBar %>
 		<% end_if %>
 		<div class="col-sm content" role="main">
 			<div class="row">

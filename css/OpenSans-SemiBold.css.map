@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../fonts/OpenSans-SemiBold.ttf"
+    ],
+    "names": [],
+    "file": "OpenSans-SemiBold.css"
+}
