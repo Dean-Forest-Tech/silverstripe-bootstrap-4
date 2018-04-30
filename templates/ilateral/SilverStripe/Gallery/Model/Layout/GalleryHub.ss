@@ -14,7 +14,7 @@
 			<div class="gallery-thumbnails">
 				<div class="row line">
 					<% loop $PaginatedGalleries %>
-						<div class="unit size1of4 col-lg-2 col-md-3 col-xs-6 <% if $MultipleOf(4) %>lastUnit<% end_if %>">
+						<div class="unit size1of4 col-lg-2 col-md-3 col-6 <% if $MultipleOf(4) %>lastUnit<% end_if %>">
 							<figure>
 								<a href="{$Link}" title="{$Title}">
 									<img
