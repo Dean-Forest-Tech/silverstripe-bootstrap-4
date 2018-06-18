@@ -3,7 +3,7 @@
         <% if $FeaturedImage.exists %>
             <p class="child-image">
                 <a href="{$Link}">
-                    <img src="$FeaturedImage.Fill(600,600).URL" title="$FeaturedImage.Title" alt="FeaturedImage.Title" class="my-0 img-fluid">
+                    <img class="img-fluid w-100" src="$FeaturedImage.Fill(600,600).URL" title="$FeaturedImage.Title" alt="FeaturedImage.Title" class="my-0 img-fluid">
                 </a>
             </p>
         <% end_if %>

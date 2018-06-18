@@ -3,7 +3,7 @@
         <div class="unit size1of3 col-sm-4">
             <p>
                 <a href="{$Link}">
-					<img src="$FeaturedImage.Fill(600,400).URL" alt="$FeaturedImage.Title" class="rounded img-responsive img-fluid">
+					<img class="img-fluid w-100" src="$FeaturedImage.Fill(600,400).URL" alt="$FeaturedImage.Title" class="rounded img-responsive img-fluid">
                 </a>
             </p>
         </div>
