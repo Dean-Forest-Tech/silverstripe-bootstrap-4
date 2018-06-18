@@ -6,11 +6,15 @@
     </div>
 <% else_if $FeaturedImage %>
     <p class="banner-image row mb-4">
-        <img class="img-fluid" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title">
+        <img class="img-fluid w-100 d-sm-none" src="$FeaturedImage.Fill(400,300).URL" alt="$FeaturedImage.Title">
+        <img class="img-fluid w-100 d-none d-sm-block d-lg-none" src="$FeaturedImage.Fill(800,400).URL" alt="$FeaturedImage.Title">
+        <img class="img-fluid w-100 d-none d-lg-block" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title">
     </p>
 <% else_if $Parent.FeaturedImage %>
     <p class="banner-image row mb-4">
-        <img class="img-fluid" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
+        <img class="img-fluid w-100 d-sm-none" src="$Parent.FeaturedImage.Fill(400,300).URL" alt="$Parent.FeaturedImage.Title">
+        <img class="img-fluid w-100 d-none d-sm-block d-lg-none" src="$Parent.FeaturedImage.Fill(800,400).URL" alt="$Parent.FeaturedImage.Title">
+        <img class="img-fluid w-100 d-none d-lg-block" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
     </p>
 <% end_if %>
 
