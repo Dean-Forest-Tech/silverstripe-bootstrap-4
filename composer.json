@@ -25,6 +25,7 @@
     },
     "require": {
         "composer/installers": "*",
-        "silverstripe/framework": ">=4.0"
+        "silverstripe/framework": ">=4.0",
+        "fractas/cookiepolicy": "2.1.1"
     }
 }
