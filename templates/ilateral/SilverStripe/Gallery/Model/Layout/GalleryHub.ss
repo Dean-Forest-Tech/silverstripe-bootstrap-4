@@ -18,8 +18,9 @@
 							<figure>
 								<a href="{$Link}" title="{$Title}">
 									<img
-										class="gallery-thumbnail img-fluid img-responsive"
-										src="{$GalleryThumbnail.Link}"
+										class="gallery-thumbnail img-fluid img-responsive w-100"
+										data-src="{$GalleryThumbnail.Link}"
+										src="{$GalleryThumbnail.MicroImage.Link}"
 										alt="{$GalleryThumbnail.Title}"
 									/>
 									<% if $Top.ShowImageTitles %>
