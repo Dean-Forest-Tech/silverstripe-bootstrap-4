@@ -2141,16 +2141,12 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control,
 .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
-.input-group-sm > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner
-.input-group-sm > .input-group-prepend > a.form-control-plaintext,
-.input-group-sm > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner
-.input-group-sm > .input-group-append > a.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+.input-group-sm > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner .input-group-sm > .input-group-prepend > a.form-control-plaintext,
+.input-group-sm > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner .input-group-sm > .input-group-append > a.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
-.input-group-lg > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner
-.input-group-lg > .input-group-prepend > a.form-control-plaintext,
-.input-group-lg > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner
-.input-group-lg > .input-group-append > a.form-control-plaintext {
+.input-group-lg > .input-group-prepend > .form-control-plaintext.btn, #cookie_container .cookie_inner .input-group-lg > .input-group-prepend > a.form-control-plaintext,
+.input-group-lg > .input-group-append > .form-control-plaintext.btn, #cookie_container .cookie_inner .input-group-lg > .input-group-append > a.form-control-plaintext {
   padding-right: 0;
   padding-left: 0;
 }
@@ -2158,10 +2154,8 @@ select.form-control:focus::-ms-value {
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
-.input-group-sm > .input-group-prepend > .btn, #cookie_container .cookie_inner
-.input-group-sm > .input-group-prepend > a,
-.input-group-sm > .input-group-append > .btn, #cookie_container .cookie_inner
-.input-group-sm > .input-group-append > a {
+.input-group-sm > .input-group-prepend > .btn, #cookie_container .cookie_inner .input-group-sm > .input-group-prepend > a,
+.input-group-sm > .input-group-append > .btn, #cookie_container .cookie_inner .input-group-sm > .input-group-append > a {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2179,10 +2173,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
-.input-group-lg > .input-group-prepend > .btn, #cookie_container .cookie_inner
-.input-group-lg > .input-group-prepend > a,
-.input-group-lg > .input-group-append > .btn, #cookie_container .cookie_inner
-.input-group-lg > .input-group-append > a {
+.input-group-lg > .input-group-prepend > .btn, #cookie_container .cookie_inner .input-group-lg > .input-group-prepend > a,
+.input-group-lg > .input-group-append > .btn, #cookie_container .cookie_inner .input-group-lg > .input-group-append > a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2594,8 +2586,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 a.btn.disabled, #cookie_container .cookie_inner a.disabled,
 fieldset:disabled a.btn,
-fieldset:disabled #cookie_container .cookie_inner a, #cookie_container .cookie_inner
-fieldset:disabled a {
+fieldset:disabled #cookie_container .cookie_inner a,
+#cookie_container .cookie_inner fieldset:disabled a {
   pointer-events: none;
 }
 
@@ -2623,16 +2615,16 @@ fieldset:disabled a {
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, #cookie_container .cookie_inner a:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, #cookie_container .cookie_inner a:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle, #cookie_container .cookie_inner
-.show > a.dropdown-toggle {
+.show > .btn-primary.dropdown-toggle,
+#cookie_container .cookie_inner .show > a.dropdown-toggle {
   color: #fff;
   background-color: black;
   border-color: black;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, #cookie_container .cookie_inner a:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, #cookie_container .cookie_inner a:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus, #cookie_container .cookie_inner
-.show > a.dropdown-toggle:focus {
+.show > .btn-primary.dropdown-toggle:focus,
+#cookie_container .cookie_inner .show > a.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
@@ -3451,8 +3443,8 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn, #cookie_container .cookie_inner .btn-group > a,
-.btn-group-vertical > .btn, #cookie_container .cookie_inner
-.btn-group-vertical > a {
+.btn-group-vertical > .btn,
+#cookie_container .cookie_inner .btn-group-vertical > a {
   position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -3460,42 +3452,42 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn:hover, #cookie_container .cookie_inner .btn-group > a:hover,
-.btn-group-vertical > .btn:hover, #cookie_container .cookie_inner
-.btn-group-vertical > a:hover {
+.btn-group-vertical > .btn:hover,
+#cookie_container .cookie_inner .btn-group-vertical > a:hover {
   z-index: 1;
 }
 
 .btn-group > .btn:focus, #cookie_container .cookie_inner .btn-group > a:focus, .btn-group > .btn:active, #cookie_container .cookie_inner .btn-group > a:active, .btn-group > .btn.active, #cookie_container .cookie_inner .btn-group > a.active,
-.btn-group-vertical > .btn:focus, #cookie_container .cookie_inner
-.btn-group-vertical > a:focus,
-.btn-group-vertical > .btn:active, #cookie_container .cookie_inner
-.btn-group-vertical > a:active,
-.btn-group-vertical > .btn.active, #cookie_container .cookie_inner
-.btn-group-vertical > a.active {
+.btn-group-vertical > .btn:focus,
+#cookie_container .cookie_inner .btn-group-vertical > a:focus,
+.btn-group-vertical > .btn:active,
+#cookie_container .cookie_inner .btn-group-vertical > a:active,
+.btn-group-vertical > .btn.active,
+#cookie_container .cookie_inner .btn-group-vertical > a.active {
   z-index: 1;
 }
 
 .btn-group .btn + .btn, .btn-group #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner .btn-group a + .btn, .btn-group #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner .btn-group .btn + a, .btn-group #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner .btn-group a + a,
 .btn-group .btn + .btn-group,
-.btn-group #cookie_container .cookie_inner a + .btn-group, #cookie_container .cookie_inner
-.btn-group a + .btn-group,
+.btn-group #cookie_container .cookie_inner a + .btn-group,
+#cookie_container .cookie_inner .btn-group a + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group #cookie_container .cookie_inner .btn-group + a, #cookie_container .cookie_inner
-.btn-group .btn-group + a,
+.btn-group #cookie_container .cookie_inner .btn-group + a,
+#cookie_container .cookie_inner .btn-group .btn-group + a,
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
-.btn-group-vertical #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner
-.btn-group-vertical a + .btn,
-.btn-group-vertical #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner
-.btn-group-vertical .btn + a,
-.btn-group-vertical #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner
-.btn-group-vertical a + a,
+.btn-group-vertical #cookie_container .cookie_inner a + .btn,
+#cookie_container .cookie_inner .btn-group-vertical a + .btn,
+.btn-group-vertical #cookie_container .cookie_inner .btn + a,
+#cookie_container .cookie_inner .btn-group-vertical .btn + a,
+.btn-group-vertical #cookie_container .cookie_inner a + a,
+#cookie_container .cookie_inner .btn-group-vertical a + a,
 .btn-group-vertical .btn + .btn-group,
-.btn-group-vertical #cookie_container .cookie_inner a + .btn-group, #cookie_container .cookie_inner
-.btn-group-vertical a + .btn-group,
+.btn-group-vertical #cookie_container .cookie_inner a + .btn-group,
+#cookie_container .cookie_inner .btn-group-vertical a + .btn-group,
 .btn-group-vertical .btn-group + .btn,
-.btn-group-vertical #cookie_container .cookie_inner .btn-group + a, #cookie_container .cookie_inner
-.btn-group-vertical .btn-group + a,
+.btn-group-vertical #cookie_container .cookie_inner .btn-group + a,
+#cookie_container .cookie_inner .btn-group-vertical .btn-group + a,
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3520,15 +3512,15 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner .btn-group > a:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn, #cookie_container .cookie_inner
-.btn-group > .btn-group:not(:last-child) > a {
+.btn-group > .btn-group:not(:last-child) > .btn,
+#cookie_container .cookie_inner .btn-group > .btn-group:not(:last-child) > a {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .btn-group > .btn:not(:first-child), #cookie_container .cookie_inner .btn-group > a:not(:first-child),
-.btn-group > .btn-group:not(:first-child) > .btn, #cookie_container .cookie_inner
-.btn-group > .btn-group:not(:first-child) > a {
+.btn-group > .btn-group:not(:first-child) > .btn,
+#cookie_container .cookie_inner .btn-group > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3571,42 +3563,42 @@ tbody.collapse.show {
 }
 
 .btn-group-vertical > .btn + .btn, #cookie_container .cookie_inner .btn-group-vertical > a + .btn, #cookie_container .cookie_inner .btn-group-vertical > .btn + a, #cookie_container .cookie_inner .btn-group-vertical > a + a,
-.btn-group-vertical > .btn + .btn-group, #cookie_container .cookie_inner
-.btn-group-vertical > a + .btn-group,
-.btn-group-vertical > .btn-group + .btn, #cookie_container .cookie_inner
-.btn-group-vertical > .btn-group + a,
+.btn-group-vertical > .btn + .btn-group,
+#cookie_container .cookie_inner .btn-group-vertical > a + .btn-group,
+.btn-group-vertical > .btn-group + .btn,
+#cookie_container .cookie_inner .btn-group-vertical > .btn-group + a,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner .btn-group-vertical > a:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn, #cookie_container .cookie_inner
-.btn-group-vertical > .btn-group:not(:last-child) > a {
+.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+#cookie_container .cookie_inner .btn-group-vertical > .btn-group:not(:last-child) > a {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .btn-group-vertical > .btn:not(:first-child), #cookie_container .cookie_inner .btn-group-vertical > a:not(:first-child),
-.btn-group-vertical > .btn-group:not(:first-child) > .btn, #cookie_container .cookie_inner
-.btn-group-vertical > .btn-group:not(:first-child) > a {
+.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+#cookie_container .cookie_inner .btn-group-vertical > .btn-group:not(:first-child) > a {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
 .btn-group-toggle > .btn, #cookie_container .cookie_inner .btn-group-toggle > a,
-.btn-group-toggle > .btn-group > .btn, #cookie_container .cookie_inner
-.btn-group-toggle > .btn-group > a {
+.btn-group-toggle > .btn-group > .btn,
+#cookie_container .cookie_inner .btn-group-toggle > .btn-group > a {
   margin-bottom: 0;
 }
 
 .btn-group-toggle > .btn input[type="radio"], #cookie_container .cookie_inner .btn-group-toggle > a input[type="radio"],
-.btn-group-toggle > .btn input[type="checkbox"], #cookie_container .cookie_inner
-.btn-group-toggle > a input[type="checkbox"],
-.btn-group-toggle > .btn-group > .btn input[type="radio"], #cookie_container .cookie_inner
-.btn-group-toggle > .btn-group > a input[type="radio"],
-.btn-group-toggle > .btn-group > .btn input[type="checkbox"], #cookie_container .cookie_inner
-.btn-group-toggle > .btn-group > a input[type="checkbox"] {
+.btn-group-toggle > .btn input[type="checkbox"],
+#cookie_container .cookie_inner .btn-group-toggle > a input[type="checkbox"],
+.btn-group-toggle > .btn-group > .btn input[type="radio"],
+#cookie_container .cookie_inner .btn-group-toggle > .btn-group > a input[type="radio"],
+.btn-group-toggle > .btn-group > .btn input[type="checkbox"],
+#cookie_container .cookie_inner .btn-group-toggle > .btn-group > a input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -3696,34 +3688,34 @@ tbody.collapse.show {
 
 .input-group-prepend .btn, .input-group-prepend #cookie_container .cookie_inner a, #cookie_container .cookie_inner .input-group-prepend a,
 .input-group-append .btn,
-.input-group-append #cookie_container .cookie_inner a, #cookie_container .cookie_inner
-.input-group-append a {
+.input-group-append #cookie_container .cookie_inner a,
+#cookie_container .cookie_inner .input-group-append a {
   position: relative;
   z-index: 2;
 }
 
 .input-group-prepend .btn + .btn, .input-group-prepend #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner .input-group-prepend a + .btn, .input-group-prepend #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner .input-group-prepend .btn + a, .input-group-prepend #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner .input-group-prepend a + a,
 .input-group-prepend .btn + .input-group-text,
-.input-group-prepend #cookie_container .cookie_inner a + .input-group-text, #cookie_container .cookie_inner
-.input-group-prepend a + .input-group-text,
+.input-group-prepend #cookie_container .cookie_inner a + .input-group-text,
+#cookie_container .cookie_inner .input-group-prepend a + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
-.input-group-prepend #cookie_container .cookie_inner .input-group-text + a, #cookie_container .cookie_inner
-.input-group-prepend .input-group-text + a,
+.input-group-prepend #cookie_container .cookie_inner .input-group-text + a,
+#cookie_container .cookie_inner .input-group-prepend .input-group-text + a,
 .input-group-append .btn + .btn,
-.input-group-append #cookie_container .cookie_inner a + .btn, #cookie_container .cookie_inner
-.input-group-append a + .btn,
-.input-group-append #cookie_container .cookie_inner .btn + a, #cookie_container .cookie_inner
-.input-group-append .btn + a,
-.input-group-append #cookie_container .cookie_inner a + a, #cookie_container .cookie_inner
-.input-group-append a + a,
+.input-group-append #cookie_container .cookie_inner a + .btn,
+#cookie_container .cookie_inner .input-group-append a + .btn,
+.input-group-append #cookie_container .cookie_inner .btn + a,
+#cookie_container .cookie_inner .input-group-append .btn + a,
+.input-group-append #cookie_container .cookie_inner a + a,
+#cookie_container .cookie_inner .input-group-append a + a,
 .input-group-append .btn + .input-group-text,
-.input-group-append #cookie_container .cookie_inner a + .input-group-text, #cookie_container .cookie_inner
-.input-group-append a + .input-group-text,
+.input-group-append #cookie_container .cookie_inner a + .input-group-text,
+#cookie_container .cookie_inner .input-group-append a + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
-.input-group-append #cookie_container .cookie_inner .input-group-text + a, #cookie_container .cookie_inner
-.input-group-append .input-group-text + a {
+.input-group-append #cookie_container .cookie_inner .input-group-text + a,
+#cookie_container .cookie_inner .input-group-append .input-group-text + a {
   margin-left: -1px;
 }
 
@@ -3762,11 +3754,11 @@ tbody.collapse.show {
 
 .input-group > .input-group-prepend > .btn, #cookie_container .cookie_inner .input-group > .input-group-prepend > a,
 .input-group > .input-group-prepend > .input-group-text,
-.input-group > .input-group-append:not(:last-child) > .btn, #cookie_container .cookie_inner
-.input-group > .input-group-append:not(:last-child) > a,
+.input-group > .input-group-append:not(:last-child) > .btn,
+#cookie_container .cookie_inner .input-group > .input-group-append:not(:last-child) > a,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
-.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), #cookie_container .cookie_inner
-.input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#cookie_container .cookie_inner .input-group > .input-group-append:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -3774,11 +3766,11 @@ tbody.collapse.show {
 
 .input-group > .input-group-append > .btn, #cookie_container .cookie_inner .input-group > .input-group-append > a,
 .input-group > .input-group-append > .input-group-text,
-.input-group > .input-group-prepend:not(:first-child) > .btn, #cookie_container .cookie_inner
-.input-group > .input-group-prepend:not(:first-child) > a,
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+#cookie_container .cookie_inner .input-group > .input-group-prepend:not(:first-child) > a,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-.input-group > .input-group-prepend:first-child > .btn:not(:first-child), #cookie_container .cookie_inner
-.input-group > .input-group-prepend:first-child > a:not(:first-child),
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+#cookie_container .cookie_inner .input-group > .input-group-prepend:first-child > a:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -5917,7 +5909,8 @@ button.close {
 }
 
 .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before,
-.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
   border-width: 0.5rem 0.5rem 0;
 }
 
@@ -5927,7 +5920,8 @@ button.close {
 }
 
 
-.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after {
   bottom: 1px;
   border-top-color: #fff;
 }
@@ -5944,7 +5938,8 @@ button.close {
 }
 
 .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before,
-.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+.bs-popover-right .arrow::after,
+.bs-popover-auto[x-placement^="right"] .arrow::after {
   border-width: 0.5rem 0.5rem 0.5rem 0;
 }
 
@@ -5954,7 +5949,8 @@ button.close {
 }
 
 
-.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+.bs-popover-right .arrow::after,
+.bs-popover-auto[x-placement^="right"] .arrow::after {
   left: 1px;
   border-right-color: #fff;
 }
@@ -5968,7 +5964,8 @@ button.close {
 }
 
 .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
-.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after {
   border-width: 0 0.5rem 0.5rem 0.5rem;
 }
 
@@ -5978,7 +5975,8 @@ button.close {
 }
 
 
-.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after {
   top: 1px;
   border-bottom-color: #fff;
 }
@@ -6006,7 +6004,8 @@ button.close {
 }
 
 .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
-.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+.bs-popover-left .arrow::after,
+.bs-popover-auto[x-placement^="left"] .arrow::after {
   border-width: 0.5rem 0 0.5rem 0.5rem;
 }
 
@@ -6016,7 +6015,8 @@ button.close {
 }
 
 
-.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+.bs-popover-left .arrow::after,
+.bs-popover-auto[x-placement^="left"] .arrow::after {
   right: 1px;
   border-left-color: #fff;
 }
@@ -6860,6 +6860,7 @@ button.bg-dark:focus {
 
 .align-self-auto {
   -ms-flex-item-align: auto !important;
+      -ms-grid-row-align: auto !important;
       align-self: auto !important;
 }
 
@@ -6875,6 +6876,7 @@ button.bg-dark:focus {
 
 .align-self-center {
   -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
       align-self: center !important;
 }
 
@@ -6885,6 +6887,7 @@ button.bg-dark:focus {
 
 .align-self-stretch {
   -ms-flex-item-align: stretch !important;
+      -ms-grid-row-align: stretch !important;
       align-self: stretch !important;
 }
 
@@ -7000,6 +7003,7 @@ button.bg-dark:focus {
   }
   .align-self-sm-auto {
     -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-sm-start {
@@ -7012,6 +7016,7 @@ button.bg-dark:focus {
   }
   .align-self-sm-center {
     -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-sm-baseline {
@@ -7020,6 +7025,7 @@ button.bg-dark:focus {
   }
   .align-self-sm-stretch {
     -ms-flex-item-align: stretch !important;
+        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -7136,6 +7142,7 @@ button.bg-dark:focus {
   }
   .align-self-md-auto {
     -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-md-start {
@@ -7148,6 +7155,7 @@ button.bg-dark:focus {
   }
   .align-self-md-center {
     -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-md-baseline {
@@ -7156,6 +7164,7 @@ button.bg-dark:focus {
   }
   .align-self-md-stretch {
     -ms-flex-item-align: stretch !important;
+        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -7272,6 +7281,7 @@ button.bg-dark:focus {
   }
   .align-self-lg-auto {
     -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-lg-start {
@@ -7284,6 +7294,7 @@ button.bg-dark:focus {
   }
   .align-self-lg-center {
     -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-lg-baseline {
@@ -7292,6 +7303,7 @@ button.bg-dark:focus {
   }
   .align-self-lg-stretch {
     -ms-flex-item-align: stretch !important;
+        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -7408,6 +7420,7 @@ button.bg-dark:focus {
   }
   .align-self-xl-auto {
     -ms-flex-item-align: auto !important;
+        -ms-grid-row-align: auto !important;
         align-self: auto !important;
   }
   .align-self-xl-start {
@@ -7420,6 +7433,7 @@ button.bg-dark:focus {
   }
   .align-self-xl-center {
     -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
         align-self: center !important;
   }
   .align-self-xl-baseline {
@@ -7428,6 +7442,7 @@ button.bg-dark:focus {
   }
   .align-self-xl-stretch {
     -ms-flex-item-align: stretch !important;
+        -ms-grid-row-align: stretch !important;
         align-self: stretch !important;
   }
 }
@@ -9366,7 +9381,7 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  a:not(.btn):not(#cookie_container .cookie_inner a) {
+  a:not(.btn) {
     text-decoration: underline;
   }
   abbr[title]::after {
@@ -9507,16 +9522,16 @@ body {
 
 html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
 body .container,
-body #cookie_container .cookie_inner, #cookie_container
-body .cookie_inner {
+body #cookie_container .cookie_inner,
+#cookie_container body .cookie_inner {
   padding: 0 15px;
 }
 
 @media (min-width: 768px) {
   html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
   body .container,
-  body #cookie_container .cookie_inner, #cookie_container
-  body .cookie_inner {
+  body #cookie_container .cookie_inner,
+  #cookie_container body .cookie_inner {
     padding: 0 30px;
   }
 }
