@@ -8,7 +8,7 @@ header {
     color: $header-colour;
     border-top: 7px solid $header-top-border-colour;
     a {
-        color: $white;      
+        color: $header-colour;      
     }
 
     @include media-breakpoint-up(lg) {
