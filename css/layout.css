@@ -123,7 +123,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @-ms-viewport {
@@ -9605,7 +9605,6 @@ header .bottom-bar {
 }
 
 .main .container, .main #cookie_container .cookie_inner, #cookie_container .main .cookie_inner {
-  background: #fff;
   padding-bottom: 15px;
 }
 
@@ -9620,10 +9619,6 @@ header .bottom-bar {
 .main .secondary .nav-pills .nav .active {
   background: transparent;
   color: #868e96;
-}
-
-.main .secondary .nav-pills .active {
-  border-radius: 0;
 }
 
 /***************************************
