@@ -10,12 +10,6 @@ body {
     .container {
         padding: 0 $grid-gutter-width/2;
     } 
-
-    @include media-breakpoint-up(md) {
-        .container {
-            padding: 0 $grid-gutter-width;
-        }
-    }
 }
 hr {
     margin-bottom: $grid-gutter-width;
