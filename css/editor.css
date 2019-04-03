@@ -9327,15 +9327,6 @@ body #cookie_container .cookie_inner,
   padding: 0 15px;
 }
 
-@media (min-width: 768px) {
-  html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
-  body .container,
-  body #cookie_container .cookie_inner,
-  #cookie_container body .cookie_inner {
-    padding: 0 30px;
-  }
-}
-
 hr {
   margin-bottom: 30px;
 }
