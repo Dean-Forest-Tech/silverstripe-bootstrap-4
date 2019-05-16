@@ -10,6 +10,5 @@
 <% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-solid/index.js") %>
 <% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-regular/index.js") %>
 <% require javascript("themes/bootstrap/node_modules/@fortawesome/fontawesome-free-brands/index.js") %>
-<% require javascript('fractas/cookiepolicy:client/dist/javascript/jquery.cookie.policy.min.js') %>
 
 <% include Requirements_extra %>
