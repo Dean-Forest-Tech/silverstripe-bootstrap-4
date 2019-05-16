@@ -1,15 +1,15 @@
 {
-  "name": "bootstrap",
+  "name": "silverstripe-bootstrap",
   "version": "1.0.0",
   "description": "SilverStripe Theme using Bootstrap 4",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "bootstrap": "^4.0.0",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "bootstrap": "^4.3.1",
     "imagesloaded": "^4.1.4",
-    "jquery": "^3.3.1",
-    "matchheight": "^0.1.0",
-    "popper.js": "^1.12.9",
-    "tether": "^1.4.3"
+    "jquery": "^3.4.1",
+    "matchheight": "^0.1.2",
+    "popper.js": "^1.15.0",
+    "tether": "^1.4.6"
   },
   "repository": {
     "type": "git",
