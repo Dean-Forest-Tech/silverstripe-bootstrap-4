@@ -6,10 +6,7 @@
 }
 html,
 body {
-    background: $footer-background;
-    .container {
-        padding: 0 $grid-gutter-width/2;
-    } 
+    background: $body-bg;
 }
 hr {
     margin-bottom: $grid-gutter-width;
