@@ -1,5 +1,5 @@
 <footer role="contentinfo">
-    <div class="container px-lg-0">
+    <div class="container">
         <div class="row">
             <div class="col-sm">
                 <ul class="nav">

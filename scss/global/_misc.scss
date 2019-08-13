@@ -2,7 +2,6 @@
     MISC STYLES
 ****************************************/
 .map-row {
-    width: calc(100% + #{$grid-gutter-width});
     min-width: 100%;
     display: block;
 }
@@ -13,10 +12,10 @@
     }
 }
 #WidgetHolder,
-nav.secondary {
+nav.secondary { 
     margin-bottom: $grid-gutter-width;
 }
-
+ 
 #cookie_container {
     @extend .bg-success;
     @extend .text-white;
