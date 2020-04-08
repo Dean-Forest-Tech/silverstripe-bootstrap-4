@@ -29,23 +29,17 @@
 					</button>
 				<% end_if %>
 				<% with $SiteConfig.ContactPage %>
-                    <ul class="nav justify-content-end d-none d-sm-block d-lg-none">
-                        <% if $PhoneNumber %>
-                            <li class="nav-item">
-                                <span class="nav-link">$PhoneNumber</span>
-                            </li>
-                        <% end_if %>
-                        <% if $Email %>
-                            <li class="nav-item">
-                                <a class="nav-link" href="mailto:$Email">$Email</a>
-                            </li>
-                        <% end_if %>
-                    </ul>
+					<% if $PhoneNumber %>
+						<a class="nav-link my-1 mx-auto mx-sm-2" href="tel:$PhoneNumber"><i class="fas fa-phone"></i></a>
+					<% end_if %>
+					<% if $Email %>
+						<a class="nav-link my-1 mx-auto mx-sm-2" href="mailto:$Email"><i class="fas fa-envelope"></i></a>
+					<% end_if %>
                 <% end_with %>
 			</div>
 			<div class="col-lg <% if $SearchForm %>searchform-enabled<% end_if %>">
 				<% with $SiteConfig.ContactPage %>
-                    <ul class="nav justify-content-end d-sm-none d-lg-flex">
+                    <ul class="nav justify-content-end d-none d-lg-flex">
                         <% if $PhoneNumber %>
                             <li class="nav-item">
                                 <span class="nav-link">$PhoneNumber</span>
