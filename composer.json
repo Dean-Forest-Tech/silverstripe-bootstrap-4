@@ -20,7 +20,8 @@
             "css",
             "javascript",
             "images",
-            "webfonts"
+            "icons",
+            "fonts"
         ]
     },
     "require": {
