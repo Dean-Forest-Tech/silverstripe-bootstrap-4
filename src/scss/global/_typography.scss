@@ -4,8 +4,8 @@
     $infix: breakpoint-infix($next, $grid-breakpoints);
 
     &#{$infix} {
-      @include media-breakpoint-up($next) { 
-        .navbar-nav {  
+      @include media-breakpoint-up($next) {
+        .navbar-nav {
           .nav-link {
             padding-right: 1rem;
             padding-left: 1rem;
@@ -15,42 +15,54 @@
     }
   }
 }
+
 .mce-content-body,
 .content {
-    img {
-        @extend .img-fluid;
-        min-width: 200px;
-        margin: $spacer/2 0;
-        &.leftAlone {
-            @extend .d-block;
-        }
-        &.center {
-            @extend .mx-auto;
-            @extend .d-block;
-        }
-        &.left {
-            @extend .float-sm-left;
-        }
-        &.right {
-            @extend .float-sm-right;
-        }
-        &.left,
-        &.right {
-            @include media-breakpoint-up(sm) {
-                max-width: 50%;
-            }
-            min-width: 200px;
-        }
-        @include media-breakpoint-up(sm) {
-            &.left {
-                margin-right: $spacer;
-            }
-            &.right {
-                margin-left: $spacer;
-            } 
-        }
+  img {
+    @extend .img-fluid;
+
+    min-width: 200px;
+    margin: $spacer/2 0;
+
+    /* stylelint-disable selector-class-pattern */
+    &.leftAlone {
+      @extend .d-block;
     }
+
+    &.center {
+      @extend .mx-auto;
+      @extend .d-block;
+    }
+
+    &.left {
+      @extend .float-sm-left;
+    }
+
+    &.right {
+      @extend .float-sm-right;
+    }
+
+    &.left,
+    &.right {
+      @include media-breakpoint-up(sm) {
+        max-width: 50%;
+      }
+
+      min-width: 200px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      &.left {
+        margin-right: $spacer;
+      }
+
+      &.right {
+        margin-left: $spacer;
+      }
+    }
+  }
 }
+
 .btn {
-    white-space: normal;
-}  
+  white-space: normal;
+}

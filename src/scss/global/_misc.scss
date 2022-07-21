@@ -2,32 +2,38 @@
     MISC STYLES
 ****************************************/
 .map-row {
-    min-width: 100%;
-    display: block;
+  min-width: 100%;
+  display: block;
 }
+
 .embed-responsive {
-    margin-bottom: $grid-gutter-width;
-    &.embed-responsive-map {
-        padding-bottom: $grid-gutter-width*10;
-    }
+  margin-bottom: $grid-gutter-width;
+
+  &.embed-responsive-map {
+    padding-bottom: $grid-gutter-width*10;
+  }
 }
-#WidgetHolder,
-nav.secondary { 
-    margin-bottom: $grid-gutter-width;
+
+nav.secondary {
+  margin-bottom: $grid-gutter-width;
 }
- 
+
+/* stylelint-disable selector-id-pattern */
 #cookie_container {
-    @extend .bg-success;
-    @extend .text-white;
-    .cookie_inner {
-        @extend .container;
-        a {
-            @extend .btn;
-            @extend .btn-primary;
-        }
+  @extend .bg-success;
+  @extend .text-white;
+
+  /* stylelint-disable selector-class-pattern */
+  .cookie_inner {
+    @extend .container;
+
+    a {
+      @extend .btn;
+      @extend .btn-primary;
     }
+  }
 }
 
 .gallery-modal {
-    z-index: 9999 !important; 
+  z-index: 9999 !important;
 }

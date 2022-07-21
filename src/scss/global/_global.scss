@@ -2,12 +2,14 @@
     CORE STYLES
 ****************************************/
 :root {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 html,
 body {
-    background: $body-bg;
+  background: $body-bg;
 }
+
 hr {
-    margin-bottom: $grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
 }

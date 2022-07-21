@@ -2,18 +2,21 @@
     FOOTER STYLES
 ****************************************/
 footer {
-    background: $footer-background;
-    padding-top: $grid-gutter-width/2;
-    padding-bottom: $grid-gutter-width/2;
+  background: $footer-background;
+  padding-top: $grid-gutter-width/2;
+  padding-bottom: $grid-gutter-width/2;
+  color: $footer-colour;
+  font-size: 0.9rem;
+
+  a {
     color: $footer-colour;
-    font-size: 0.9rem;
-    a {
-        color: $footer-colour;
-        &.active {
-            color: rgba($footer-colour, 0.5);
-        }
+
+    &.active {
+      color: rgba($footer-colour, 0.5);
     }
-    .row {
-        margin-bottom: $grid-gutter-width/2;
-    }
+  }
+
+  .row {
+    margin-bottom: $grid-gutter-width/2;
+  }
 }
