@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
-@import 'global/_variables';
+@import 'global/fonts';
+@import 'global/variables';
 @import "../../node_modules/bootstrap/scss/variables";
 
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -37,10 +38,11 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/print";
 
-@import 'global/_typography';
-@import 'global/_global';
-@import 'global/_header';
-@import 'global/_body';
-@import 'global/_footer';
-@import 'global/_misc';
-@import 'layout/_homepage';
+@import 'global/typography';
+@import 'global/global';
+@import 'global/header';
+@import 'global/body';
+@import 'global/footer';
+@import 'global/misc';
+
+@import 'layout/homepage';
