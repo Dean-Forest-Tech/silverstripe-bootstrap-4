@@ -29,17 +29,21 @@
 
 		<% include Icons %>
 		<% include Requirements %>
+		<% include Requirements_extra %>
 	</head>
 	<body <% if $isHomePage %>class="home-page"<% end_if %> <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
 		
 		<% include Header %>
 
 		<div class="main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
-			<div class="container typography">
-				<div class="row">
-					$Layout
-				</div>
-			</div>
+			<%-- Banner to contain featured image, page title, etc --%>
+			<% include Banner %>
+		
+			<%-- 
+				Wrap Layout in an include, so the include can be
+				overwritten, rather than the core template
+			--%>
+			<% include Layout Layout=$Layout, Top=$Top, Me=$Me %>
 		</div>
 
 		<% include Footer %>
