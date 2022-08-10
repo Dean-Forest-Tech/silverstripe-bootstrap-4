@@ -1,7 +1,5 @@
 <% require css("i-lateral/silverstripe-gallery: client/dist/css/gallery.min.css") %>
 
-<% include Banner %>
-
 <% if $ShowSideBar && $Menu(2).exists %>
 	<% include SideBar %>
 <% end_if %>

@@ -1,5 +1,3 @@
-<% include Banner %>
-
 <% if $ShowSideBar %>
     <% if $Menu(2) || $SideBarView.Widgets %>
         <% include SideBar %>

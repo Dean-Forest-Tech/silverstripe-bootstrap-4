@@ -1,8 +1,4 @@
-<% include Banner %>
-
 <div id="Content" class="col-sm searchResults">
-    <h1>$Title</h1>
-
     <% if $Query %>
         <p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
     <% end_if %>

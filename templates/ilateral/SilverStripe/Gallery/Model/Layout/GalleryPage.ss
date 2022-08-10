@@ -3,8 +3,6 @@
 <% require javascript("i-lateral/silverstripe-gallery: node_modules/tingle.js/dist/tingle.min.js") %>
 <% require javascript("i-lateral/silverstripe-gallery: client/dist/javascript/gallery.min.js") %>
 
-<% include Banner %>
-
 <% if $ShowSideBar && $Menu(2).exists %>
     <% include SideBar %>
 <% end_if %>
