@@ -21,6 +21,37 @@ image/banner).
 You can either add a `FeaturedImage` to your page, or rely on a module,
 such as `i-lateral/silverstripe-featuredimage`
 
+## Banner Images / Titles
+
+This theme loads the title, breadcrumbs and any featured
+images into a `Banner` include. This means you can 
+breakout and style the banner seperatly to the main site
+`Layout`
+
+You can also make the banner span the full width of the 
+site by adding `FullWidthBanner` to true in your Pages
+or Controllers, eg:
+
+```PHP
+class PageController extends ContentController
+{
+    public function getFullWidthBanner()
+    {
+        return true;
+    }
+}
+```
+## Page `Layout`
+
+As more complex websites need more sophisticated markup, 
+the `$Layout` variable is broken out into a seperate 
+include (called from `Page.ss` master template).
+
+This allows the layout to be overwritten and altered
+without having to make changes to the core `Page.ss`
+master template (which allows for a slightly smoother
+upgrade path)
+
 ## Webpack
 
 Core CSS/JS is transpiled and minified via webpack and all bootstrap classes
