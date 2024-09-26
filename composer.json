@@ -1,6 +1,7 @@
 {
-    "name": "ilateral/silverstripe-bootstrap-4",
+    "name": "dft/silverstripe-bootstrap-4",
     "description": "A simple SilverStripe theme built on bootstrap 4",
+    "homepage": "https://github.com/Dean-Forest-Tech/silverstripe-bootstrap-4",
     "type": "silverstripe-theme",
     "keywords": [
         "silverstripe",
@@ -10,8 +11,8 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Mark Anderson (ilateral)",
-            "homepage": "http://www.ilateral.co.uk"
+            "name": "Dean Forest Tech",
+            "homepage": "https://dean-forest-tech.uk"
         }
     ],
     "extra": {
@@ -26,6 +27,6 @@
     },
     "require": {
         "composer/installers": "*",
-        "silverstripe/framework": ">=4.0"
+        "silverstripe/framework": "^4 || ^5"
     }
 }
