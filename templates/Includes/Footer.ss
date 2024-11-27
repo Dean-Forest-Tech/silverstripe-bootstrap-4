@@ -31,6 +31,6 @@
                 <% end_with %>
             </div>
         </div>
-        <p class="text-center">&copy; Copyright {$Now.Year} {$SiteConfig.Title}. All rights reserved. | SilverStripe Bootstrap theme by <a href="http://www.ilateralweb.co.uk" target="_blank">ilateral</a>.</p>
+        <p class="text-center">&copy; Copyright {$Now.Year} {$SiteConfig.Title}. All rights reserved. | SilverStripe Bootstrap theme by <a href="https://dean-forest-tech.uk" target="_blank">Dean Forest Tech</a>.</p>
     </div>
 </footer>
