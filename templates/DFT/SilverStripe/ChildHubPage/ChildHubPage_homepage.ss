@@ -3,7 +3,7 @@
 <% if $Children %>
     <div class="row content">
         <% loop $Children.Limit(4) %>
-            <% include ilateral\\SilverStripe\\ChildHubPage\\ChildHubGridItem_homepage %>
+            <% include DFT\\SilverStripe\\ChildHubPage\\ChildHubGridItem_homepage %>
         <% end_loop %>
     </div>
 <% end_if %>

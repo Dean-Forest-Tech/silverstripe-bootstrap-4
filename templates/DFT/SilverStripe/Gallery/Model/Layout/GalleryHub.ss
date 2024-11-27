@@ -1,4 +1,4 @@
-<% require css("i-lateral/silverstripe-gallery: client/dist/css/gallery.min.css") %>
+<% require css("dft/silverstripe-gallery: client/dist/css/gallery.min.css") %>
 
 <% if $ShowSideBar && $Menu(2).exists %>
 	<% include SideBar %>
