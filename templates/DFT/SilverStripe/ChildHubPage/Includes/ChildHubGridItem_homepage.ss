@@ -1,4 +1,4 @@
-<div class="unit size1of3 unit-33 col-lg-3 col-sm-6 mb-4 child $EvenOdd child-{$Pos}">
+<div class="unit size1of3 unit-33 col-12 col-md-6 col-lg-3 mb-4 child $EvenOdd child-{$Pos}">
     <div class="h-100">
         <% if $FeaturedImage.exists %>
             <p class="child-image">
@@ -15,7 +15,7 @@
             <p>$Content.FirstParagraph</p>
             
             <p>
-                <a class="btn btn-primary" href="{$Link}">
+                <a class="btn btn-primary w-100" href="{$Link}">
                     <%t ChildHubPage.More "More" %>
                 </a>
             </p>
